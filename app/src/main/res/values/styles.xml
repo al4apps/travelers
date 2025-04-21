@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView">
         <item name="android:background">@color/md_theme_background</item>
         <item name="android:textColor">@color/md_theme_onBackground</item>
         <item name="android:strokeColor">@color/md_theme_onBackground</item>
         <item name="android:elevation">0dp</item>
         <item name="android:textAppearance">@style/BaseBodyMedium</item>
+        <item name="itemTextAppearanceActive">@style/GeologicaLight12</item>
+        <item name="itemTextAppearanceInactive">@style/GeologicaLight12</item>
         <item name="itemPaddingTop">@dimen/bottom_view_item_padding_top</item>
         <item name="itemPaddingBottom">@dimen/bottom_view_item_padding_bottom</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="hintEnabled">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="hintTextAppearance">@style/TextFieldHintStyle</item>
+    </style>
+
+    <style name="SearchCardViewStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/md_theme_background</item>
+        <item name="contentPaddingLeft">@dimen/padding_medium</item>
+        <item name="contentPaddingRight">@dimen/padding_medium</item>
+        <item name="contentPaddingTop">@dimen/padding_large</item>
+        <item name="contentPaddingBottom">@dimen/padding_large_32</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_16</item>
+    </style>
+
+    <style name="FocusMaterialButton" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_states</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:maxWidth">@dimen/button_max_width</item>
+        <item name="android:textAppearance">@style/GeologicaLight14</item>
+        <item name="android:textColor">@color/button_text_tint</item>
+
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <style name="OutlinedButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/card_corner_8</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:textAppearance">@style/GeologicaReg16</item>
     </style>
 </resources>

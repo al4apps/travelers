@@ -5,4 +5,12 @@
     <string name="menu_search_title">Поиск</string>
     <string name="menu_trip_title">Поездка</string>
     <string name="menu_profile_title">Профиль</string>
+
+    <!-- Search   -->
+    <string name="search_field_address_from_hint">Откуда</string>
+    <string name="search_field_address_destination_hint">Куда</string>
+    <string name="search_field_calendar_hint">Когда</string>
+    <string name="search_field_count_hint">Количество мест</string>
+    <string name="search_screen_title">Поиск поездок</string>
+    <string name="search_search_button_text">Искать</string>
 </resources>

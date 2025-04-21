@@ -19,4 +19,14 @@
     <dimen name="margin_large_48">48dp</dimen>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_small_10">10dp</dimen>
+
+    <dimen name="card_corner_16">16dp</dimen>
+    <dimen name="card_corner_8">8dp</dimen>
+
+    <dimen name="button_max_width">240dp</dimen>
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="button_width_std">152dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="fab_size_32">32dp</dimen>
+    <dimen name="bottom_nav_height">70dp</dimen>
 </resources>
