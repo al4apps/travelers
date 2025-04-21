@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Travelers</string>
+
+    <!-- BottomNav    -->
+    <string name="menu_search_title">Поиск</string>
+    <string name="menu_trip_title">Поездка</string>
+    <string name="menu_profile_title">Профиль</string>
 </resources>

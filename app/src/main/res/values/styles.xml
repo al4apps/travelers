@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:background">@color/md_theme_background</item>
+        <item name="android:textColor">@color/md_theme_onBackground</item>
+        <item name="android:strokeColor">@color/md_theme_onBackground</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:textAppearance">@style/BaseBodyMedium</item>
+        <item name="itemPaddingTop">@dimen/bottom_view_item_padding_top</item>
+        <item name="itemPaddingBottom">@dimen/bottom_view_item_padding_bottom</item>
+    </style>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseBodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/geologica_medium</item>
+    </style>
+
+</resources>

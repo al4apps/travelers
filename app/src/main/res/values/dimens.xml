@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Отступы -->
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_small_12">12dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_large_32">32dp</dimen>
+    <dimen name="bottom_view_item_padding_top">12dp</dimen>
+    <dimen name="bottom_view_item_padding_bottom">12dp</dimen>
+
+    <!-- Внешние отступы (margin) -->
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_large_32">32dp</dimen>
+    <dimen name="margin_large_48">48dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_small_10">10dp</dimen>
+</resources>

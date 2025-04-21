@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="@string/menu_search_title"
+        android:icon="@drawable/search"/>
+
+    <item android:id="@+id/menu_trip"
+        android:title="@string/menu_trip_title"
+        android:icon="@drawable/plus"/>
+
+    <item android:id="@+id/menu_profile"
+        android:title="@string/menu_profile_title"
+        android:icon="@drawable/profile"/>
+
+</menu>
