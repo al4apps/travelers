@@ -11,7 +11,7 @@ class MainFragment: AbstractFragment<FragmentMainBinding>(FragmentMainBinding::i
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        setupNavController()
+        setupNavController()
     }
 
     private fun setupNavController() {
