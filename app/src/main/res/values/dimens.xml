@@ -35,4 +35,8 @@
     <dimen name="icon_size_20">20dp</dimen>
     <dimen name="card_trip_ava_size">32dp</dimen>
     <dimen name="card_trip_ava_corner">20dp</dimen>
+    <dimen name="trip_card_height">170dp</dimen>
+    <dimen name="margin_address_line">20dp</dimen>
+    <dimen name="trip_screen_car_image_width">300dp</dimen>
+    <dimen name="trip_screen_car_image_height">200dp</dimen>
 </resources>

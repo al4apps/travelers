@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addressTimeBlock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey_focus" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/timesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_screen_time_out_text"
+            android:textAppearance="@style/GeologicaMed12"
+            android:textColor="@color/grey_focus" />
+
+        <View
+            android:layout_width="@dimen/margin_medium"
+            android:layout_height="1dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeStartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/GeologicaMed12"
+            tools:text="09:00" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrowRight"
+            android:layout_width="@dimen/icon_size_16"
+            android:layout_height="@dimen/icon_size_16"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_small"
+            android:src="@drawable/arrow_right" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeLengthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textAppearance="@style/GeologicaMed12"
+            android:textColor="@color/grey_focus"
+            tools:text="3 ч" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrowRight2"
+            android:layout_width="@dimen/icon_size_16"
+            android:layout_height="@dimen/icon_size_16"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_small"
+            android:src="@drawable/arrow_right" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeEndText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textAppearance="@style/GeologicaMed12"
+            tools:text="12:00" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="@color/light_grey_focus" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/icon_size_16"
+            android:layout_height="@dimen/icon_size_16"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_extra_small"
+            android:src="@drawable/pin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/addressFromText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/GeologicaMed14"
+            tools:text="Исфара" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_address_line"
+        android:textAppearance="@style/GeologicaLight12"
+        tools:text="Автовокзал" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/margin_extra_small"
+        android:background="@color/light_grey_focus" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/icon_size_16"
+            android:layout_height="@dimen/icon_size_16"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_extra_small"
+            android:src="@drawable/pin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/addressDestText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/GeologicaMed14"
+            tools:text="Худжанд" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_address_line"
+        android:textAppearance="@style/GeologicaLight12"
+        tools:text="Центр" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        android:background="@color/light_grey_focus" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

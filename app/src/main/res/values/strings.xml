@@ -13,4 +13,9 @@
     <string name="search_field_count_hint">Количество мест</string>
     <string name="search_screen_title">Поиск поездок</string>
     <string name="search_search_button_text">Искать</string>
+    <string name="trip_screen_time_out_text">Выезд:</string>
+    <string name="trip_screen_time_finish_text">Прибытие</string>
+    <string name="trip_screen_1_passanger_text">1 пассажир:</string>
+    <string name="trip_screen_count_text">Осталось мест:</string>
+    <string name="trip_screen_call_button_text">Позвонить</string>
 </resources>

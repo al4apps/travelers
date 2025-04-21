@@ -16,6 +16,7 @@
     <style name="TextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="hintEnabled">false</item>
         <item name="android:maxLines">1</item>
+        <item name="android:textAppearance">@style/GeologicaMed16</item>
         <item name="hintTextAppearance">@style/TextFieldHintStyle</item>
     </style>
 
@@ -63,6 +64,12 @@
     </style>
 
     <style name="OutlinedButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">@dimen/card_corner_8</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:textAppearance">@style/GeologicaReg16</item>
+    </style>
+
+    <style name="FilledButtonStyle" parent="Widget.Material3.Button">
         <item name="cornerRadius">@dimen/card_corner_8</item>
         <item name="android:paddingVertical">0dp</item>
         <item name="android:textAppearance">@style/GeologicaReg16</item>

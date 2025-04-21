@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="170dp">
+        android:layout_height="@dimen/trip_card_height">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/timesLayout"
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/padding_small"
             app:layout_constraintTop_toBottomOf="@+id/timesLayout"
-            android:layout_height="0dp"/>
+            android:layout_height="1dp"/>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/carImageCard"
@@ -128,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="@dimen/margin_extra_small"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="@dimen/margin_address_line"
                 android:background="@color/light_grey_focus"/>
 
             <LinearLayout
