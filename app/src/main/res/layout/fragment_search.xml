@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_bg_gradient">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/SearchCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:text="@string/search_screen_title"
+                android:textAlignment="center"
+                android:textAppearance="@style/ScreenTitleStyle" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fromInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconDrawable="@drawable/close"
+                app:startIconDrawable="@drawable/pin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fromEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/search_field_address_from_hint"
+                    android:inputType="text"
+                    android:paddingVertical="0dp"
+                    android:textAppearance="@style/TextFieldHintStyle"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/destInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                app:startIconDrawable="@drawable/pin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/destEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/search_field_address_destination_hint"
+                    android:inputType="text"
+                    android:paddingVertical="0dp"
+                    android:textAppearance="@style/TextFieldHintStyle"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/calendarInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                app:startIconDrawable="@drawable/calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/calendarEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/search_field_calendar_hint"
+                    android:inputType="text"
+                    android:paddingVertical="0dp"
+                    android:textAppearance="@style/TextFieldHintStyle"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/countInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_weight="1"
+                app:endIconDrawable="@drawable/plus"
+                app:endIconMode="custom"
+                app:startIconDrawable="@drawable/profile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/countEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/search_field_count_hint"
+                    android:inputType="number"
+                    android:paddingVertical="0dp"
+                    android:textAppearance="@style/TextFieldHintStyle"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/OutlinedButtonStyle"
+                android:id="@+id/searchButton"
+                android:layout_width="@dimen/button_width_std"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/search_search_button_text"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Отступы -->
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_small_12">12dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_large_32">32dp</dimen>
+    <dimen name="bottom_view_item_padding_top">12dp</dimen>
+    <dimen name="bottom_view_item_padding_bottom">12dp</dimen>
+
+    <!-- Внешние отступы (margin) -->
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_large_32">32dp</dimen>
+    <dimen name="margin_large_48">48dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_small_10">10dp</dimen>
+
+    <dimen name="card_corner_16">16dp</dimen>
+    <dimen name="card_corner_8">8dp</dimen>
+
+    <dimen name="button_max_width">240dp</dimen>
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="button_width_std">152dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="fab_size_32">32dp</dimen>
+    <dimen name="bottom_nav_height">70dp</dimen>
+    <dimen name="trips_toolbar_height">70dp</dimen>
+    <dimen name="trip_card_car_card_size">80dp</dimen>
+    <dimen name="icon_size_16">16dp</dimen>
+    <dimen name="icon_size_20">20dp</dimen>
+    <dimen name="card_trip_ava_size">32dp</dimen>
+    <dimen name="card_trip_ava_corner">20dp</dimen>
+    <dimen name="trip_card_height">170dp</dimen>
+    <dimen name="margin_address_line">20dp</dimen>
+    <dimen name="trip_screen_car_image_width">300dp</dimen>
+    <dimen name="trip_screen_car_image_height">200dp</dimen>
+    <dimen name="icon_size_24">24dp</dimen>
+</resources>

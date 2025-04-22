@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_medium"
+    style="@style/TripCardViewStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trip_card_height">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/timesLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/timeStartText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/GeologicaReg14"
+                tools:text="09:00" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/arrowRight"
+                android:layout_width="@dimen/icon_size_16"
+                android:layout_height="@dimen/icon_size_16"
+                android:layout_marginStart="@dimen/margin_small"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/timeLengthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textAppearance="@style/GeologicaReg14"
+                android:textColor="@color/grey_focus"
+                tools:text="3 ч" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/arrowRight2"
+                android:layout_width="@dimen/icon_size_16"
+                android:layout_height="@dimen/icon_size_16"
+                android:layout_marginStart="@dimen/margin_small"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/timeEndText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textAppearance="@style/GeologicaReg14"
+                tools:text="12:00" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/invisibleDivider"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_small"
+            app:layout_constraintTop_toBottomOf="@+id/timesLayout"
+            android:layout_height="1dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/carImageCard"
+            android:layout_width="@dimen/trip_card_car_card_size"
+            android:layout_height="@dimen/trip_card_car_card_size"
+            app:cardCornerRadius="@dimen/card_corner_16"
+            app:strokeWidth="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/invisibleDivider">
+
+            <ImageView
+                android:id="@+id/carImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/car_white" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/carImageCard"
+            app:layout_constraintTop_toTopOf="@id/carImageCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_16"
+                    android:layout_height="@dimen/icon_size_16"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/margin_extra_small"
+                    android:src="@drawable/pin" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/addressFromText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/GeologicaMed14"
+                    tools:text="Исфара" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/arrowRight3"
+                    android:layout_width="@dimen/icon_size_16"
+                    android:layout_height="@dimen/icon_size_16"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:visibility="visible"
+                    android:src="@drawable/line_arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="@dimen/margin_extra_small"
+                android:layout_marginStart="@dimen/margin_address_line"
+                android:background="@color/light_grey_focus"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_16"
+                    android:layout_height="@dimen/icon_size_16"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/margin_extra_small"
+                    android:src="@drawable/pin" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/addressDestText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/GeologicaMed14"
+                    tools:text="Худжанд" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey_focus"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/carImageCard"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/driverInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                app:cardBackgroundColor="@color/md_theme_background"
+                android:layout_width="@dimen/card_trip_ava_size"
+                android:layout_height="@dimen/card_trip_ava_size"
+                app:cardCornerRadius="@dimen/card_trip_ava_corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="0dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/driverImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_circle" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/driverNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:textAppearance="@style/GeologicaLight12"
+                app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Искандар" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/carTypeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/car"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/timesLayout"
+            app:layout_constraintBottom_toBottomOf="@id/timesLayout"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/priceCard"
+            style="@style/TripPriceCardViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/driverInfoLayout"
+            app:layout_constraintTop_toTopOf="@id/driverInfoLayout"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/GeologicaMed16"
+                tools:text="200 с." />
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

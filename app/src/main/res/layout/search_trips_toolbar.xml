@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:navigationIcon="@drawable/arrow_left">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_medium">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/toolbarTextAddressFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextOnTripsToolbarStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Исфара" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrowRight"
+            android:layout_width="@dimen/icon_size_16"
+            android:layout_height="@dimen/icon_size_16"
+            android:layout_marginStart="@dimen/margin_small"
+            android:src="@drawable/line_arrow_right"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarTextAddressFrom"
+            app:layout_constraintStart_toEndOf="@+id/toolbarTextAddressFrom"
+            app:layout_constraintTop_toTopOf="@+id/toolbarTextAddressFrom" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/toolbarTextAddressDest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textAppearance="@style/TextOnTripsToolbarStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarTextAddressFrom"
+            app:layout_constraintStart_toEndOf="@id/arrowRight"
+            app:layout_constraintTop_toTopOf="@+id/toolbarTextAddressFrom"
+            tools:text="Худжанд" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/GeologicaLight12"
+            android:textColor="@color/grey_focus"
+            app:layout_constraintStart_toStartOf="@id/toolbarTextAddressFrom"
+            app:layout_constraintTop_toBottomOf="@id/toolbarTextAddressFrom"
+            tools:text="Завтра, 1 пассажир" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.MaterialToolbar>
