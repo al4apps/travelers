@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewOnTripScreenStyle"
+    android:id="@+id/driverInfoLayout"
+    app:contentPaddingTop="@dimen/margin_small"
+    app:contentPaddingBottom="@dimen/margin_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/driverImageCardView"
+            android:layout_width="@dimen/card_trip_ava_size"
+            android:layout_height="@dimen/card_trip_ava_size"
+            app:cardBackgroundColor="@color/md_theme_background"
+            app:cardCornerRadius="@dimen/card_trip_ava_corner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeWidth="0dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/driverImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_circle"
+                tools:ignore="ImageContrastCheck" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/driverNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:textAppearance="@style/GeologicaReg14"
+            app:layout_constraintBottom_toBottomOf="@+id/driverImageCardView"
+            app:layout_constraintStart_toEndOf="@+id/driverImageCardView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Искандар" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/driverImageCardView"
+            app:layout_constraintTop_toBottomOf="@id/driverImageCardView"
+            android:textAppearance="@style/GeologicaRegCur14"
+            tools:text="Пур шавад хай мекуним"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
