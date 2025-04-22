@@ -90,5 +90,22 @@
         <item name="android:textAppearance">@style/GeologicaReg16</item>
     </style>
 
-    <dimen name="card_elevation">4вз</dimen>
+    <style name="TextButtonStyle" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_height">@dimen/text_button_height</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:textAppearance">@style/GeologicaReg16</item>
+    </style>
+
+    <style name="SmallFabButtonStyle" parent="Widget.Material3.Button.IconButton.Filled">
+<!--        android:insetLeft="0dp"-->
+<!--        android:insetTop="0dp"-->
+<!--        android:insetRight="0dp"-->
+<!--        android:insetBottom="0dp"-->
+<!--        android:padding="0dp"-->
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
 </resources>

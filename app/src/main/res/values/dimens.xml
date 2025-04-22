@@ -40,4 +40,5 @@
     <dimen name="trip_screen_car_image_width">300dp</dimen>
     <dimen name="trip_screen_car_image_height">200dp</dimen>
     <dimen name="icon_size_24">24dp</dimen>
+    <dimen name="text_button_height">32dp</dimen>
 </resources>

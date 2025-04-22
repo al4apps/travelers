@@ -13,7 +13,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_left"
-        app:title="Вторник, 22 апреля"
+        tools:title="Вторник, 22 апреля"
         app:titleTextAppearance="@style/GeologicaReg16" />
 
     <ScrollView
@@ -37,14 +37,14 @@
 
             <include
                 android:id="@+id/carInfoBlock"
-                layout="@layout/car_info_block"
+                layout="@layout/block_car_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium" />
 
             <include
                 android:id="@+id/driverInfoBlock"
-                layout="@layout/driver_info_block"
+                layout="@layout/block_driver_info"
                 android:layout_marginTop="@dimen/margin_small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
 
             <include
                 android:id="@+id/priceSeatsBlock"
-                layout="@layout/price_seats_block"
+                layout="@layout/block_price_seats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium"
