@@ -35,7 +35,6 @@
         <item name="contentPadding">@dimen/padding_medium</item>
         <item name="strokeWidth">1dp</item>
         <item name="cardCornerRadius">@dimen/card_corner_16</item>
-        <item name="elevation">@dimen/card_elevation</item>
     </style>
 
     <style name="TripPriceCardViewStyle" parent="Widget.Material3.CardView.Filled">
@@ -46,6 +45,22 @@
         <item name="contentPaddingBottom">@dimen/padding_extra_small</item>
         <item name="strokeWidth">1dp</item>
         <item name="cardCornerRadius">@dimen/card_corner_8</item>
+    </style>
+
+    <style name="CardViewOnTripScreenStyle" parent="TripPriceCardViewStyle">
+        <item name="cardBackgroundColor">@color/md_theme_background</item>
+        <item name="contentPaddingLeft">@dimen/padding_medium</item>
+        <item name="contentPaddingRight">@dimen/padding_medium</item>
+        <item name="contentPaddingTop">@dimen/padding_small_12</item>
+        <item name="contentPaddingBottom">@dimen/padding_small_12</item>
+    </style>
+
+    <style name="BlurCardViewOnImageStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/background_blur</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_8</item>
+        <item name="contentPaddingLeft">@dimen/margin_medium</item>
+        <item name="contentPaddingRight">@dimen/margin_medium</item>
     </style>
 
     <style name="FocusMaterialButton" parent="Widget.Material3.Button">

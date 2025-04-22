@@ -39,4 +39,5 @@
     <dimen name="margin_address_line">20dp</dimen>
     <dimen name="trip_screen_car_image_width">300dp</dimen>
     <dimen name="trip_screen_car_image_height">200dp</dimen>
+    <dimen name="icon_size_24">24dp</dimen>
 </resources>

@@ -176,4 +176,6 @@
     <color name="yellow_green_pressed_button_start">#BEEB44</color>
     <color name="yellow_green_pressed_button_end">#B6D74C</color>
     <color name="yellow_green_pressed_card">#E5FBA5</color>
+
+    <color name="background_blur">#70333A4D</color>
 </resources>
