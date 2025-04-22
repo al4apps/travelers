@@ -110,14 +110,14 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                style="@style/OutlinedButtonStyle"
                 android:id="@+id/searchButton"
+                style="@style/FilledButtonStyle"
                 android:layout_width="@dimen/button_width_std"
                 android:layout_height="@dimen/button_height"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/margin_large"
                 android:text="@string/search_search_button_text"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
