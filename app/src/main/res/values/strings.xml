@@ -25,6 +25,7 @@
     <string name="new_trip_screen_title">Создать поездку</string>
     <string name="new_trip_create_button_text">Создать</string>
     <string name="new_trip_next_button_text">Далее</string>
+    <string name="new_trip_continue_button_text">Продолжить</string>
     <string name="trip_unauthorized_block_title">Для создания поездки</string>
     <string name="trip_unauthorized_block_title_continuation">нужно Войти или Зарегистрироваться</string>
     <string name="registration_button_text">Регистрация</string>
@@ -35,15 +36,35 @@
     <string name="trip_confirm_route_time_text">Время в пути</string>
     <string name="trip_confirm_route_end_text">Прибытие</string>
     <string name="trip_confirm_set_time_button_text">указать время</string>
-    <string name="trip_confirm_set_car_button_text">Укажите машину</string>
+    <string name="trip_confirm_set_car_button_text">Выберите машину</string>
     <string name="trip_confirm_address_text">Адрес:</string>
     <string name="trip_confirm_address_point_text">Место посадки:</string>
     <string name="trip_confirm_car_title">Машина</string>
+    <string name="trip_confirm_price_title">Стоимость поездки</string>
+    <string name="trip_confirm_set_car_price_text">Укажите стоимость:</string>
     <string name="trip_confirm_address_end_point_text">Место высадки:</string>
     <string name="trip_confirm_address_point_field_hint">Где забирать пассажиров?</string>
     <string name="trip_confirm_address_end_point_field_hint">Где высадить пассажиров?</string>
     <string name="plus" translatable="false">+</string>
     <string name="minus" translatable="false">-</string>
     <string name="two_points">:</string>
+    <string name="button_to_back_text">Назад</string>
+    <string name="button_edit_text">Изменить</string>
+    <string name="button_publish_text">Сохранить</string>
+    <string name="trip_confirm_change_car_button_text">Выбрать другую</string>
+    <string name="trip_confirm_create_trip_button_text">Создать поездку</string>
+    <string name="trip_confirmation_toolbar_title">Создание поездки</string>
+    <string name="zero">0</string>
+    <string name="dialog_new_trip_confirm_description_text">Так будет выглядеть ваша поездка.\nДополнительная информация будет внутри.</string>
+    <string name="dialog_new_trip_confirm_title">Ваша поездка</string>
+    <string name="done_button_text">Готово!</string>
+    <string name="car_selected_seats_text">Место:</string>
+
+    <string-array name="currency_variables">
+        <item>TJ Сомони</item>
+        <item>UZ Sum</item>
+        <item>RU Рубль</item>
+        <item>KG Сом</item>
+    </string-array>
 
 </resources>

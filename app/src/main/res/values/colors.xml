@@ -144,6 +144,8 @@
 
     <color name="cyan_bg">#90E0EF</color>
     <color name="green_bg">#9ef01a</color>
+    <color name="blue_dest_a">#0077B6</color>
+    <color name="red_dest_b">#d62828</color>
     <!--   Новый фон  -->
     <color name="focus_fon_F8F9F4">#F8F9F4</color>
 
@@ -165,7 +167,7 @@
     <color name="light_grey_focus">#BFCCCE</color>
 
     <color name="clicked_label">#6467FF</color>
-    <color name="grey_dialog_background">#99B4B4B1</color>
+    <color name="grey_dialog_background">#998E9B9A</color>
     <color name="cursor_color">#634D9C</color>
     <color name="black_button_pressed">#DD222222</color>
     <color name="white_onboarding_background">#66F7F7F7</color>

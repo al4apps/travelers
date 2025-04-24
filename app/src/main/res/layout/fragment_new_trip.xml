@@ -18,10 +18,10 @@
 
         <include
             android:id="@+id/tripFormBlock"
-            layout="@layout/block_trip_form"
+            layout="@layout/block_new_trip_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+            android:visibility="visible"
             tools:visibility="visible"/>
 
         <include

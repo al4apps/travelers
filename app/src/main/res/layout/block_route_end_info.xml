@@ -98,6 +98,7 @@
         style="?attr/textInputFilledStyle"
         android:layout_width="match_parent"
         android:layout_height="32dp"
+        android:layout_marginTop="@dimen/margin_extra_small"
         android:textColorHint="@color/grey_focus"
         app:boxBackgroundColor="@color/md_theme_background"
         app:hintEnabled="false">
@@ -106,14 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/trip_confirm_address_end_point_field_hint"
-            android:lines="1"
-            android:paddingStart="0dp"
-            android:paddingTop="@dimen/margin_extra_small"
-            android:paddingEnd="@dimen/margin_extra_small"
-            android:paddingBottom="@dimen/margin_extra_small"
-            android:textAppearance="@style/TextFieldTextStyle"
-            android:textColorHint="@color/grey_focus"
-            android:textSize="14sp"
+            style="@style/UnderlineEditTextStyle"
             tools:ignore="TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/carInfoBlock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/carImageCard"
+        android:layout_width="@dimen/trip_card_car_card_size"
+        android:layout_height="@dimen/trip_card_car_card_size"
+        app:cardCornerRadius="@dimen/card_corner_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="0dp">
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car_white" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/carModelText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:textAppearance="@style/CardMediumTextStyle"
+        app:layout_constraintBottom_toTopOf="@+id/seatsCountTextView"
+        app:layout_constraintEnd_toStartOf="@id/carTypeIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/carImageCard"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Toyota Camry" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/carTypeIcon"
+        android:layout_width="@dimen/icon_size_24"
+        android:layout_height="@dimen/icon_size_24"
+        android:src="@drawable/car"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/seatsCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_selected_seats_text"
+        android:textAppearance="@style/TripConfirmGreyTextStyle"
+        android:textColor="#546E7A"
+        app:layout_constraintBottom_toBottomOf="@+id/carImageCard"
+        app:layout_constraintStart_toStartOf="@id/carModelText"
+        app:layout_constraintTop_toBottomOf="@+id/carModelText"
+        tools:ignore="HardcodedText" />
+
+    <include
+        android:id="@+id/seatsCountBlock"
+        layout="@layout/block_plus_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="@id/seatsCountTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seatsCountTextView"
+        app:layout_constraintTop_toTopOf="@id/seatsCountTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/TextButtonStyle"
+        android:layout_width="@dimen/button_max_width"
+        android:layout_height="@dimen/text_button_height"
+        android:text="@string/trip_confirm_change_car_button_text"
+        android:layout_marginTop="@dimen/margin_extra_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carImageCard"
+        tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -105,4 +105,8 @@
     <style name="TripConfirmGreyTextStyle" parent="GeologicaReg16">
         <item name="android:textColor">@color/grey_focus</item>
     </style>
+
+    <style name="GreyDescriptionTextStyle" parent="GeologicaLight12">
+        <item name="android:textColor">@color/grey_focus</item>
+    </style>
 </resources>

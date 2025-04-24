@@ -2,17 +2,10 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tripFormLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_large"
-        android:text="@string/new_trip_screen_title"
-        android:textAlignment="center"
-        android:textAppearance="@style/ScreenTitleStyle" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fromInputLayout"
@@ -29,7 +22,7 @@
             android:hint="@string/search_field_address_from_hint"
             android:inputType="text"
             android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldHintStyle"
+            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,7 +41,7 @@
             android:hint="@string/search_field_address_destination_hint"
             android:inputType="text"
             android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldHintStyle"
+            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +60,7 @@
             android:hint="@string/search_field_calendar_hint"
             android:inputType="text"
             android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldHintStyle"
+            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,18 +83,7 @@
             android:hint="@string/search_field_count_hint"
             android:inputType="number"
             android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldHintStyle"
+            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/createButton"
-        style="@style/FilledButtonStyle"
-        android:layout_width="@dimen/button_width_std"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/margin_large"
-        android:text="@string/new_trip_next_button_text"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
-
 </androidx.appcompat.widget.LinearLayoutCompat>

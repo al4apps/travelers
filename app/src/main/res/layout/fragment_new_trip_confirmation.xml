@@ -9,12 +9,13 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:titleCentered="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_left"
         app:titleTextAppearance="@style/GeologicaReg16"
-        tools:title="Создание поездки" />
+        app:title="@string/trip_confirmation_toolbar_title" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -36,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/trip_confirm_route_start_text"
                 android:textAlignment="textStart"
-                android:textAppearance="@style/MiddleTitleStyle" />
+                android:textAppearance="@style/MiddleTitleStyle"
+                tools:ignore="TextContrastCheck" />
 
             <View
                 android:layout_width="match_parent"
@@ -45,6 +47,8 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/addedInfoCardView"
                 style="@style/CardViewOnTripScreenStyle"
+                app:contentPaddingTop="@dimen/padding_small_12"
+                app:contentPaddingBottom="@dimen/padding_medium_20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -60,6 +64,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
                 android:text="@string/trip_confirm_route_time_text"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/MiddleTitleStyle" />
@@ -70,68 +75,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <com.google.android.material.button.MaterialButton
-                        style="@style/SmallFabButtonStyle"
-                        android:layout_width="@dimen/fab_size_32"
-                        android:layout_height="@dimen/fab_size_32"
-                        android:layout_gravity="center"
-                        android:text="@string/minus"
-                        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="@dimen/margin_small"
-                        android:textAppearance="@style/GeologicaReg16"
-                        tools:text="00 ч" />
-
-                    <com.google.android.material.button.MaterialButton
-                        style="@style/SmallFabButtonStyle"
-                        android:layout_width="@dimen/fab_size_32"
-                        android:layout_height="@dimen/fab_size_32"
-                        android:layout_gravity="center"
-                        android:text="@string/plus"
-                        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TouchTargetSizeCheck" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="@dimen/margin_medium"
-                        android:text="@string/two_points"
-                        android:textAppearance="@style/GeologicaReg16" />
-
-                    <com.google.android.material.button.MaterialButton
-                        style="@style/SmallFabButtonStyle"
-                        android:layout_width="@dimen/fab_size_32"
-                        android:layout_height="@dimen/fab_size_32"
-                        android:layout_gravity="center"
-                        android:text="@string/minus"
-                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="@dimen/margin_small"
-                        android:textAppearance="@style/GeologicaReg16"
-                        tools:text="00 мин" />
-
-                    <com.google.android.material.button.MaterialButton
-                        style="@style/SmallFabButtonStyle"
-                        android:layout_width="@dimen/fab_size_32"
-                        android:layout_height="@dimen/fab_size_32"
-                        android:layout_gravity="center"
-                        android:text="@string/plus"
-                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                <include
+                    android:id="@+id/routeTimeBlock"
+                    layout="@layout/block_route_time"/>
             </com.google.android.material.card.MaterialCardView>
 
             <View
@@ -151,132 +97,54 @@
                 style="@style/CardViewOnTripScreenStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:visibility="gone">
+                app:contentPaddingTop="@dimen/padding_small_12"
+                app:contentPaddingBottom="@dimen/padding_medium_20"
+                tools:visibility="visible">
 
                 <include
                     android:id="@+id/routeEndInfoBlock"
                     layout="@layout/block_route_end_info" />
 
             </com.google.android.material.card.MaterialCardView>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/margin_small" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_extra_small"
-                android:text="@string/trip_confirm_car_title"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/MiddleTitleStyle" />
-
-            <com.google.android.material.card.MaterialCardView
-                style="@style/CardViewOnTripScreenStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/setCarButton"
-                    style="@style/TextButtonStyle"
-                    android:visibility="gone"
-                    tools:visibility="gone"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/button_max_width"
-                    android:layout_height="@dimen/text_button_height"
-                    android:text="@string/trip_confirm_set_car_button_text"/>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/carInfoBlock"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/carImageCard"
-                        android:layout_width="@dimen/trip_card_car_card_size"
-                        android:layout_height="@dimen/trip_card_car_card_size"
-                        app:cardCornerRadius="@dimen/card_corner_16"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:strokeWidth="0dp">
-
-                        <ImageView
-                            android:id="@+id/carImage"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:contentDescription="@null"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/car_white" />
-                    </com.google.android.material.card.MaterialCardView>
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/carModelText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/margin_medium"
-                        android:textAppearance="@style/CardMediumTextStyle"
-                        app:layout_constraintBottom_toBottomOf="@+id/carImageCard"
-                        app:layout_constraintStart_toEndOf="@+id/carImageCard"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:text="Toyota Camry" />
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="@dimen/icon_size_24"
-                        android:layout_height="@dimen/icon_size_24"
-                        android:src="@drawable/car"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/seatsCountTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Мест в машине: "
-                        android:textAppearance="@style/TripConfirmGreyTextStyle"
-                        android:textColor="#546E7A"
-                        app:layout_constraintStart_toStartOf="@id/carImageCard"
-                        app:layout_constraintTop_toBottomOf="@+id/carImageCard"
-                        tools:ignore="HardcodedText" />
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/seatsCountBlock"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="@dimen/margin_medium"
-                        app:layout_constraintStart_toEndOf="@id/seatsCountTextView"
-                        app:layout_constraintTop_toTopOf="@id/seatsCountTextView"
-                        app:layout_constraintBottom_toBottomOf="@id/seatsCountTextView">
-
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/SmallFabButtonStyle"
-                            android:layout_width="@dimen/fab_size_32"
-                            android:layout_height="@dimen/fab_size_32"
-                            android:layout_gravity="center"
-                            android:text="@string/minus"
-                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="@dimen/margin_small"
-                            android:textAppearance="@style/GeologicaReg16"
-                            tools:text="03" />
-
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/SmallFabButtonStyle"
-                            android:layout_width="@dimen/fab_size_32"
-                            android:layout_height="@dimen/fab_size_32"
-                            android:layout_gravity="center"
-                            android:text="@string/plus"
-                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </com.google.android.material.card.MaterialCardView>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            style="@style/OutlinedButtonStyle"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:contentDescription="@null"
+            android:text="@string/button_to_back_text"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/fab_size_32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
+            style="@style/FilledButtonStyle"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:contentDescription="@null"
+            android:text="@string/new_trip_next_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
