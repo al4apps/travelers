@@ -77,4 +77,21 @@
         <item>KG Сом</item>
     </string-array>
 
+    <!-- Profile    -->
+    <string name="profile_unauth_block_title">Создайте аккаунт</string>
+    <string name="profile_unauth_block_title2">Создайте аккаунт или Войдите</string>
+    <string name="profile_unauth_block_description">и начните зарабатывать на своих поездках!</string>
+<!--    <string name="profile_unauth_block_description">чтобы зарабатывать на своих поездках</string>-->
+    <string name="profile_unauth_block_description2">Уже есть аккаунт?</string>
+    <string name="profile_login_button_text">Войти</string>
+    <string name="profile_register_button_text">Создать аккаунт</string>
+    <string name="profile_toolbar_title">Личный кабинет</string>
+    <string name="profile_option_my_cars_text">Мои машины</string>
+    <string name="profile_option_my_trips_text">Мои поездки</string>
+    <string name="profile_option_settings_text">Настройки</string>
+    <string name="profile_option_help_text">Помощь</string>
+    <string name="profile_option_privacy_policy_text">Политика конфиденциальности</string>
+    <string name="profile_option_agreement_text">Пользовательское соглашение</string>
+    <string name="profile_option_logout_text">Выйти из аккаунта</string>
+
 </resources>

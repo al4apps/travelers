@@ -21,8 +21,9 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_small_10">10dp</dimen>
 
-    <dimen name="card_corner_16">16dp</dimen>
-    <dimen name="card_corner_8">8dp</dimen>
+    <dimen name="card_corner_medium">16dp</dimen>
+    <dimen name="card_corner_small">8dp</dimen>
+    <dimen name="card_corner_large">24dp</dimen>
 
     <dimen name="button_max_width">240dp</dimen>
     <dimen name="button_height">44dp</dimen>
@@ -45,4 +46,7 @@
     <dimen name="edit_text_1_line_height">32dp</dimen>
     <dimen name="basic_edit_text_height">40dp</dimen>
     <dimen name="padding_under_scroll_layout">60dp</dimen>
+    <dimen name="profile_ava_image_size">40dp</dimen>
+    <dimen name="profile_ava_card_radius">20dp</dimen>
+    <dimen name="profile_auth_info_block_height">60dp</dimen>
 </resources>

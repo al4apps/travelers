@@ -114,4 +114,9 @@
         <item name="android:textColor">@color/grey_focus</item>
         <item name="android:textSize">13sp</item>
     </style>
+
+    <style name="ProfileOptionTextStyle" parent="GeologicaLight16">
+        <item name="android:textColor">@color/md_theme_onBackground</item>
+    </style>
+    <style name="ToolbarTextStyle" parent="GeologicaReg16"/>
 </resources>
