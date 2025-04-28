@@ -20,6 +20,30 @@
         <item name="hintTextAppearance">@style/TextFieldHintStyle</item>
     </style>
 
+    <style name="NoStrokeTextInputStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">
+        <item name="hintEnabled">false</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="boxBackgroundColor">@color/md_theme_background</item>
+    </style>
+
+    <style name="PriceTextInputLayoutStyle" parent="NoStrokeTextInputStyle">
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="PriceEditTextStyle">
+        <item name="hintEnabled">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/md_theme_primary</item>
+        <item name="android:textAppearance">@style/GeologicaRegular24</item>
+    </style>
+
     <style name="SearchCardViewStyle" parent="Widget.Material3.CardView.Elevated">
         <item name="cardBackgroundColor">@color/md_theme_background</item>
         <item name="contentPaddingLeft">@dimen/padding_medium</item>
@@ -47,12 +71,13 @@
         <item name="cardCornerRadius">@dimen/card_corner_8</item>
     </style>
 
-    <style name="CardViewOnTripScreenStyle" parent="TripPriceCardViewStyle">
+    <style name="CardViewOnTripScreenStyle" parent="Widget.Material3.CardView.Elevated">
         <item name="cardBackgroundColor">@color/md_theme_background</item>
         <item name="contentPaddingLeft">@dimen/padding_medium</item>
         <item name="contentPaddingRight">@dimen/padding_medium</item>
-        <item name="contentPaddingTop">@dimen/padding_small_12</item>
-        <item name="contentPaddingBottom">@dimen/padding_small_12</item>
+        <item name="contentPaddingTop">@dimen/padding_medium</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPaddingBottom">@dimen/padding_medium</item>
     </style>
 
     <style name="BlurCardViewOnImageStyle" parent="Widget.Material3.CardView.Filled">
@@ -71,7 +96,6 @@
         <item name="android:maxWidth">@dimen/button_max_width</item>
         <item name="android:textAppearance">@style/GeologicaLight14</item>
         <item name="android:textColor">@color/button_text_tint</item>
-
         <item name="android:insetLeft">0dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetRight">0dp</item>
@@ -90,5 +114,50 @@
         <item name="android:textAppearance">@style/GeologicaReg16</item>
     </style>
 
-    <dimen name="card_elevation">4вз</dimen>
+    <style name="TextButtonStyle" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_height">@dimen/text_button_height</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:textAppearance">@style/GeologicaReg16</item>
+    </style>
+
+    <style name="SmallFabButtonStyle" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="strokeColor">@color/md_theme_primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="UnderlineEditTextStyle">
+        <item name="android:inputType">textCapSentences|textAutoComplete</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingTop">@dimen/margin_extra_small</item>
+        <item name="android:paddingEnd">@dimen/margin_extra_small</item>
+        <item name="android:paddingBottom">@dimen/margin_extra_small</item>
+        <item name="android:textAppearance">@style/TextFieldTextStyle</item>
+        <item name="android:textColorHint">@color/grey_focus</item>
+    </style>
+
+    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
+    </style>
+
+    <!--  Стиль для полноэкранных диалогов-->
+    <style name="FullScreenDialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowBackground">@color/grey_dialog_background</item>
+    </style>
+
+    <style name="AddressEditTextStyle">
+        <item name="android:inputType">textCapSentences|textAutoComplete</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingVertical">0dp</item>
+        <item name="android:textAppearance">@style/TextFieldTextStyle</item>
+    </style>
 </resources>

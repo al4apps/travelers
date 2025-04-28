@@ -29,85 +29,9 @@
                 android:textAlignment="center"
                 android:textAppearance="@style/ScreenTitleStyle" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/fromInputLayout"
-                style="@style/TextInputLayoutStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:endIconDrawable="@drawable/close"
-                app:startIconDrawable="@drawable/pin">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/fromEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint="@string/search_field_address_from_hint"
-                    android:inputType="text"
-                    android:paddingVertical="0dp"
-                    android:textAppearance="@style/TextFieldHintStyle"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/destInputLayout"
-                style="@style/TextInputLayoutStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium"
-                app:startIconDrawable="@drawable/pin">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/destEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint="@string/search_field_address_destination_hint"
-                    android:inputType="text"
-                    android:paddingVertical="0dp"
-                    android:textAppearance="@style/TextFieldHintStyle"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/calendarInputLayout"
-                style="@style/TextInputLayoutStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium"
-                app:startIconDrawable="@drawable/calendar">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/calendarEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint="@string/search_field_calendar_hint"
-                    android:inputType="text"
-                    android:paddingVertical="0dp"
-                    android:textAppearance="@style/TextFieldHintStyle"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/countInputLayout"
-                style="@style/TextInputLayoutStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_weight="1"
-                app:endIconDrawable="@drawable/plus"
-                app:endIconMode="custom"
-                app:startIconDrawable="@drawable/profile">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/countEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint="@string/search_field_count_hint"
-                    android:inputType="number"
-                    android:paddingVertical="0dp"
-                    android:textAppearance="@style/TextFieldHintStyle"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <include
+                android:id="@+id/formBlock"
+                layout="@layout/block_trip_form"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/searchButton"

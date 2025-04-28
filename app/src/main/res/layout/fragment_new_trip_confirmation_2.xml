@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/trip_confirmation_toolbar_title"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/GeologicaReg16" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_extra_small"
+            android:text="@string/trip_confirm_car_title"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/MiddleTitleStyle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/carBlockCardView"
+            style="@style/CardViewOnTripScreenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/setCarButton"
+                style="@style/TextButtonStyle"
+                android:layout_width="@dimen/button_max_width"
+                android:layout_height="@dimen/text_button_height"
+                android:layout_gravity="center"
+                android:text="@string/trip_confirm_set_car_button_text"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <include
+                android:id="@+id/carSelectedBlock"
+                layout="@layout/block_car_selected"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_extra_small"
+            android:text="@string/trip_confirm_price_title"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/MiddleTitleStyle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/priceBlockCardView"
+            style="@style/CardViewOnTripScreenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/setPriceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trip_confirm_set_car_price_text"
+                    android:textAppearance="@style/TripConfirmGreyTextStyle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextContrastCheck" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/priceTextInputLayout"
+                    style="?attr/textInputFilledStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/edit_text_1_line_height"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColorHint="@color/grey_focus"
+                    app:boxBackgroundColor="@color/md_theme_background"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toStartOf="@+id/currencyInputLayout"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/setPriceText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/priceEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:paddingStart="0dp"
+                        android:paddingTop="@dimen/margin_extra_small"
+                        android:paddingEnd="@dimen/margin_extra_small"
+                        android:paddingBottom="0dp"
+                        android:textAlignment="textEnd"
+                        android:textAppearance="@style/TextFieldTextStyle"
+                        android:textColorHint="@color/grey_focus"
+                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/currencyInputLayout"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/edit_text_1_line_height"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:labelFor="@+id/currencyTextView"
+                    android:textColorHint="@color/grey_focus"
+                    app:boxBackgroundColor="@color/md_theme_background"
+                    app:endIconMode="dropdown_menu"
+                    app:hintEnabled="false"
+                    app:layout_constraintBottom_toBottomOf="@+id/priceTextInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/priceTextInputLayout"
+                    app:layout_constraintTop_toTopOf="@+id/priceTextInputLayout">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/currencyTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:paddingRight="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        app:simpleItems="@array/currency_variables" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            style="@style/OutlinedButtonStyle"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:contentDescription="@null"
+            android:text="@string/button_to_back_text"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/fab_size_32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
+            style="@style/FilledButtonStyle"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:contentDescription="@null"
+            android:text="@string/new_trip_continue_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

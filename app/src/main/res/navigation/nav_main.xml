@@ -5,6 +5,6 @@
     app:startDestination="@id/menu_search">
 
     <include app:graph="@navigation/nav_search" />
-    <include app:graph="@navigation/nav_trip" />
+    <include app:graph="@navigation/nav_new_trip" />
     <include app:graph="@navigation/nav_profile" />
 </navigation>

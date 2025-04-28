@@ -10,9 +10,20 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="TextFieldTextStyle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/geologica_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
     <style name="ScreenTitleStyle" parent="BaseBodyMedium">
         <item name="android:textSize">20sp</item>
     </style>
+
+    <style name="MiddleTitleStyle" parent="GeologicaReg16">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CardMediumTextStyle" parent="GeologicaReg16"/>
 
     <style name="GeologicaRegular24" parent="TextAppearance.Material3.TitleMedium">
         <item name="fontFamily">@font/geologica_regular</item>
@@ -89,5 +100,18 @@
         <item name="fontFamily">@font/geologica_light</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black_focus</item>
+    </style>
+
+    <style name="TripConfirmGreyTextStyle" parent="GeologicaLight16">
+        <item name="android:textColor">@color/grey_focus</item>
+    </style>
+
+    <style name="AddressSecondaryTextStyle" parent="GeologicaLight14">
+        <item name="android:textColor">@color/grey_dark</item>
+    </style>
+
+    <style name="GreyDescriptionTextStyle" parent="GeologicaLight12">
+        <item name="android:textColor">@color/grey_focus</item>
+        <item name="android:textSize">13sp</item>
     </style>
 </resources>

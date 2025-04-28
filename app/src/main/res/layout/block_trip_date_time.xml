@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tripDateTimeLayout"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_confirm_date_text"
+            android:textAppearance="@style/TripConfirmGreyTextStyle"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dateInfoButton"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_button_height"
+            tools:text="Вторник, 22 апреля"
+            android:visibility="visible"
+            tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            tools:visibility="gone"
+            android:textAppearance="@style/CardMediumTextStyle"
+            tools:text="Вторник, 22 апреля" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_extra_small" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_confirm_time_text"
+            android:textAppearance="@style/TripConfirmGreyTextStyle"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pickTimeButton"
+            style="@style/TextButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_button_height"
+            android:text="@string/trip_confirm_set_time_button_text"
+            android:visibility="visible"
+            tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:clickable="true"
+            android:focusable="true"
+            android:textAppearance="@style/GeologicaMed16"
+            android:textColor="@color/md_theme_primary"
+            android:visibility="gone"
+            tools:text="09:00"
+            tools:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

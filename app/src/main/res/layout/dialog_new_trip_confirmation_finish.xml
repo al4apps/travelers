@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/light_grey_focus">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_large_32"
+        android:background="@color/md_theme_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ScreenTitleStyle"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:text="@string/dialog_new_trip_confirm_title" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/trip_card" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/descrText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:text="@string/dialog_new_trip_confirm_description_text"
+            android:textAppearance="@style/GreyDescriptionTextStyle"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/successButton"
+                style="@style/TextButtonStyle"
+                android:layout_width="@dimen/button_max_width"
+                android:layout_height="@dimen/text_button_height"
+                android:text="@string/done_button_text"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editButton"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="@dimen/button_width_std"
+                android:layout_height="@dimen/button_height"
+                android:contentDescription="@null"
+                android:text="@string/button_edit_text"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/fab_size_32"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/publishButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                tools:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/publishButton"
+                style="@style/FilledButtonStyle"
+                android:layout_width="@dimen/button_width_std"
+                android:layout_height="@dimen/button_height"
+                android:contentDescription="@null"
+                android:text="@string/button_publish_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/editButton"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

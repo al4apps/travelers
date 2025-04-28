@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tripFormLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fromInputLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconDrawable="@drawable/close"
+        app:startIconDrawable="@drawable/pin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fromEditText"
+            style="@style/AddressEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_edit_text_height"
+            android:hint="@string/search_field_address_from_hint"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/destInputLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:startIconDrawable="@drawable/pin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/destEditText"
+            style="@style/AddressEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_edit_text_height"
+            android:hint="@string/search_field_address_destination_hint"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/calendarInputLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:startIconDrawable="@drawable/calendar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/calendarEditText"
+            style="@style/AddressEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_edit_text_height"
+            android:hint="@string/search_field_calendar_hint"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countInputLayout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_weight="1"
+        app:endIconDrawable="@drawable/plus"
+        app:endIconMode="custom"
+        app:startIconDrawable="@drawable/profile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/countEditText"
+            style="@style/AddressEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_edit_text_height"
+            android:hint="@string/search_field_count_hint"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/trip_confirmation_toolbar_title"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/GeologicaReg16" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_under_scroll_layout"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_trip_confirm_step_1_screen_title"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/ScreenTitleStyle"
+                tools:ignore="TextContrastCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small_10" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="@string/trip_confirm_address_title_text"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/MiddleTitleStyle" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/CardViewOnTripScreenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/addressBlock"
+                    layout="@layout/block_trip_address" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="@string/trip_confirm_date_time_title_text"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/MiddleTitleStyle" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/CardViewOnTripScreenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/dateTimeBlock"
+                    layout="@layout/block_trip_date_time" />
+
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            style="@style/OutlinedButtonStyle"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:contentDescription="@null"
+            android:text="@string/button_to_back_text"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/fab_size_32"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
+            style="@style/FilledButtonStyle"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:contentDescription="@null"
+            android:text="@string/new_trip_next_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/backButton"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
