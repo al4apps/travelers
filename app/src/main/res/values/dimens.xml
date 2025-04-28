@@ -49,4 +49,5 @@
     <dimen name="profile_ava_image_size">40dp</dimen>
     <dimen name="profile_ava_card_radius">20dp</dimen>
     <dimen name="profile_auth_info_block_height">60dp</dimen>
+    <dimen name="phone_menu_width">68dp</dimen>
 </resources>

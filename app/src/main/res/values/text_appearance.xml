@@ -6,8 +6,9 @@
     </style>
 
     <style name="TextFieldHintStyle" parent="TextAppearance.Material3.BodySmall">
-        <item name="fontFamily">@font/geologica_regular</item>
+        <item name="fontFamily">@font/geologica_light</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_focus</item>
     </style>
 
     <style name="TextFieldTextStyle" parent="TextAppearance.Material3.BodyMedium">
@@ -112,6 +113,11 @@
 
     <style name="GreyDescriptionTextStyle" parent="GeologicaLight12">
         <item name="android:textColor">@color/grey_focus</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ClickableTextStyle" parent="GeologicaLight12">
+        <item name="android:textColor">@color/clickable_text_color</item>
         <item name="android:textSize">13sp</item>
     </style>
 

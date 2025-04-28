@@ -72,7 +72,7 @@
                 app:iconGravity="textStart"
                 app:iconSize="@dimen/fab_size_32"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/publishButton"
+                app:layout_constraintEnd_toStartOf="@+id/confirmButton"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

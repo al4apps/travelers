@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.al4apps.travelers.presentation.profile.ProfileFragment"
-        android:label="ProfileFragment" />
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.al4apps.travelers.presentation.registration.RegistrationFragment"
+        android:label="RegistrationFragment" />
 </navigation>

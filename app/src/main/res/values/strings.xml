@@ -93,5 +93,33 @@
     <string name="profile_option_privacy_policy_text">Политика конфиденциальности</string>
     <string name="profile_option_agreement_text">Пользовательское соглашение</string>
     <string name="profile_option_logout_text">Выйти из аккаунта</string>
+    <string name="account_settings_toolbar_title">Настройки аккаунта</string>
+    <string name="registration_toolbar_title">Регистрация</string>
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_name_hint">Имя</string>
+    <string name="registration_lastname_hint">Фамилия (необязательно)</string>
+    <string name="registration_lastname_label">Фамилия</string>
+    <string name="registration_email_hint">Email</string>
+    <string name="registration_password_hint">Пароль</string>
+    <string name="registration_password_2_hint">Повторите пароль</string>
+    <string name="registration_phone_hint">Номер телефона</string>
+    <string name="registration_phone_registered_text">Этот номер уже зарегистрирован!</string>
+    <string name="registration_phone_registered_text_2">Попробуйте</string>
+    <string name="registration_phone_registered_error">Номер уже зарегистрирован!</string>
+    <string name="registration_finish_dialog_title">Подтвердите номер телефона</string>
+    <string name="registration_finish_dialog_description">для завершения регистрации</string>
+    <string name="registration_finish_dialog_sms_send_description">Вам отправлен SMS с кодом подтверждения</string>
+    <string name="registration_finish_dialog_no_sms_description">Не приходит SMS? Вы можете запросить\nкод повторно через %d секунд.</string>
+    <string name="registration_finish_dialog_no_sms">Не пришло SMS?</string>
+    <string name="registration_finish_dialog_sms_new">Отправить повторно</string>
+    <string name="registration_finish_dialog_sms_code_hint">Введите код из SMS</string>
+    <string name="registration_register_button_text">Регистрация</string>
+    <string name="registration_login_button_text">войти</string>
+    <string name="registration_cancel_button_text">Отмена</string>
+    <string name="registration_confirm_button_text">Подтвердить</string>
+
+    <string name="menu_phone_tj" translatable="false">+992</string>
+    <string name="menu_phone_uz" translatable="false">+998</string>
+    <string name="menu_phone_kg" translatable="false">+996</string>
 
 </resources>

@@ -54,6 +54,15 @@
         <item name="cardCornerRadius">@dimen/card_corner_medium</item>
     </style>
 
+    <style name="DialogCardViewStyle" parent="Widget.Material3.CardView.Outlined">
+        <item name="contentPaddingLeft">@dimen/padding_medium</item>
+        <item name="contentPaddingRight">@dimen/padding_medium</item>
+        <item name="contentPaddingTop">@dimen/padding_large</item>
+        <item name="contentPaddingBottom">@dimen/padding_large_32</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
+    </style>
+
     <style name="TripCardViewStyle" parent="Widget.Material3.CardView.Outlined">
         <item name="cardBackgroundColor">@color/md_theme_surface</item>
         <item name="contentPadding">@dimen/padding_medium</item>

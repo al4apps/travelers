@@ -67,12 +67,12 @@
         android:textAlignment="center"
         android:textAppearance="@style/GreyDescriptionTextStyle"
         android:layout_marginBottom="@dimen/margin_large"
-        app:layout_constraintBottom_toTopOf="@+id/publishButton"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/publishButton"
+        android:id="@+id/confirmButton"
         style="@style/FilledButtonStyle"
         android:layout_width="@dimen/button_max_width"
         android:layout_height="@dimen/button_height"

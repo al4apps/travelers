@@ -145,6 +145,7 @@
     <color name="cyan_bg">#90E0EF</color>
     <color name="green_bg">#9ef01a</color>
     <color name="blue_dest_a">#0077B6</color>
+    <color name="blue_text">#00B4D8</color>
     <color name="red_dest_b">#d62828</color>
     <!--   Новый фон  -->
     <color name="focus_fon_F8F9F4">#F8F9F4</color>
