@@ -43,4 +43,6 @@
     <dimen name="icon_size_24">24dp</dimen>
     <dimen name="text_button_height">40dp</dimen>
     <dimen name="edit_text_1_line_height">32dp</dimen>
+    <dimen name="basic_edit_text_height">40dp</dimen>
+    <dimen name="padding_under_scroll_layout">60dp</dimen>
 </resources>

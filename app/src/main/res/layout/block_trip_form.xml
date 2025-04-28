@@ -17,12 +17,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fromEditText"
+            style="@style/AddressEditTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_address_from_hint"
-            android:inputType="text"
-            android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -36,12 +34,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/destEditText"
+            style="@style/AddressEditTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_address_destination_hint"
-            android:inputType="text"
-            android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,12 +51,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/calendarEditText"
+            style="@style/AddressEditTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_calendar_hint"
-            android:inputType="text"
-            android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,12 +72,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/countEditText"
+            style="@style/AddressEditTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_count_hint"
-            android:inputType="number"
-            android:paddingVertical="0dp"
-            android:textAppearance="@style/TextFieldTextStyle"
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/routeTimeLayout"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center">
-
-    <include
-        android:id="@+id/hourBlock"
-        layout="@layout/block_plus_minus" />
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="@dimen/margin_medium"
-        android:text="@string/two_points"
-        android:textAppearance="@style/CardMediumTextStyle" />
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/trip_confirm_route_time_descr_text"
+        android:textAppearance="@style/TripConfirmGreyTextStyle"
+        tools:ignore="TextContrastCheck" />
 
     <include
-        android:id="@+id/minutesBlock"
-        layout="@layout/block_plus_minus" />
+        android:id="@+id/timeBlock"
+        layout="@layout/block_time_hh_mm"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

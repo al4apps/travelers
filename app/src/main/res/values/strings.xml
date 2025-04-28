@@ -33,9 +33,12 @@
     <string name="trip_confirm_route_start_text">Выезд</string>
     <string name="trip_confirm_date_text">Дата:</string>
     <string name="trip_confirm_time_text">Время:</string>
+    <string name="trip_confirm_date_time_title_text">Время</string>
+    <string name="trip_confirm_address_title_text">Укажите место</string>
     <string name="trip_confirm_route_time_text">Время в пути</string>
     <string name="trip_confirm_route_end_text">Прибытие</string>
     <string name="trip_confirm_set_time_button_text">указать время</string>
+    <string name="trip_confirm_route_time_descr_text">Сколько займет поездка?</string>
     <string name="trip_confirm_set_car_button_text">Выберите машину</string>
     <string name="trip_confirm_address_text">Адрес:</string>
     <string name="trip_confirm_address_point_text">Место посадки:</string>
@@ -43,22 +46,29 @@
     <string name="trip_confirm_price_title">Стоимость поездки</string>
     <string name="trip_confirm_set_car_price_text">Укажите стоимость:</string>
     <string name="trip_confirm_address_end_point_text">Место высадки:</string>
-    <string name="trip_confirm_address_point_field_hint">Где забирать пассажиров?</string>
-    <string name="trip_confirm_address_end_point_field_hint">Где высадить пассажиров?</string>
+    <string name="trip_confirm_address_point_field_hint">Где заберете пассажиров?</string>
+    <string name="trip_confirm_address_end_point_field_hint">Где высадите пассажиров?</string>
     <string name="plus" translatable="false">+</string>
     <string name="minus" translatable="false">-</string>
     <string name="two_points">:</string>
     <string name="button_to_back_text">Назад</string>
     <string name="button_edit_text">Изменить</string>
-    <string name="button_publish_text">Сохранить</string>
+    <string name="button_publish_text">Опубликовать</string>
     <string name="trip_confirm_change_car_button_text">Выбрать другую</string>
     <string name="trip_confirm_create_trip_button_text">Создать поездку</string>
     <string name="trip_confirmation_toolbar_title">Создание поездки</string>
     <string name="zero">0</string>
     <string name="dialog_new_trip_confirm_description_text">Так будет выглядеть ваша поездка.\nДополнительная информация будет внутри.</string>
+    <string name="dialog_new_trip_price_description_text">Сервис не берет комиссию за оплату.\nРасчет с пассажирами производите самостоятельно!</string>
     <string name="dialog_new_trip_confirm_title">Ваша поездка</string>
     <string name="done_button_text">Готово!</string>
     <string name="car_selected_seats_text">Место:</string>
+    <string name="new_trip_confirm_step_1_screen_title">Откуда вы выезжаете?</string>
+    <string name="new_trip_confirm_step_2_screen_title">Куда вы едете?</string>
+    <string name="new_trip_confirm_step_3_screen_title">Укажите машину</string>
+    <string name="new_trip_confirm_passenger_count_title">Сколько пассажиров возьмете?</string>
+    <string name="new_trip_confirm_step_4_screen_title">Укажите стоимость поездки</string>
+    <string name="local_currency">*сомони</string>
 
     <string-array name="currency_variables">
         <item>TJ Сомони</item>

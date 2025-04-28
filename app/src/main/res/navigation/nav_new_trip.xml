@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_trip"
+    app:startDestination="@id/newTripFragment">
+
+    <fragment
+        android:id="@+id/newTripStep1Fragment"
+        android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep1Fragment"
+        android:label="NewTripStep1Fragment" >
+        <action
+            android:id="@+id/action_newTripStep1Fragment_to_newTripStep2Fragment"
+            app:destination="@id/newTripStep2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTripStep2Fragment"
+        android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep2Fragment"
+        android:label="NewTripStep2Fragment" >
+        <action
+            android:id="@+id/action_newTripStep2Fragment_to_newTripStep3Fragment"
+            app:destination="@id/newTripStep3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newTripStep3Fragment"
+        android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep3Fragment"
+        android:label="NewTripStep3Fragment" >
+        <action
+            android:id="@+id/action_newTripStep3Fragment_to_newTripStep4Fragment"
+            app:destination="@id/newTripStep4Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newTripStep4Fragment"
+        android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep4Fragment"
+        android:label="NewTripStep4Fragment" />
+    <fragment
+        android:id="@+id/newTripFragment"
+        android:name="com.al4apps.travelers.presentation.newtrip.NewTripFragment"
+        android:label="NewTripFragment" >
+        <action
+            android:id="@+id/action_newTripFragment_to_newTripStep1Fragment"
+            app:destination="@id/newTripStep1Fragment" />
+    </fragment>
+
+</navigation>

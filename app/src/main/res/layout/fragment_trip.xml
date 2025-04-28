@@ -51,7 +51,7 @@
                 android:layout_marginHorizontal="@dimen/margin_medium" />
 
             <include
-                layout="@layout/address_time_layout"
+                layout="@layout/block_address_time_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/margin_medium"

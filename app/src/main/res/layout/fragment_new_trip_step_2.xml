@@ -30,12 +30,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/margin_medium"
+            android:paddingBottom="@dimen/padding_under_scroll_layout"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/new_trip_confirm_step_1_screen_title"
+                android:text="@string/new_trip_confirm_step_2_screen_title"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/ScreenTitleStyle"
                 tools:ignore="TextContrastCheck" />
@@ -71,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_extra_small"
-                android:text="@string/trip_confirm_date_time_title_text"
+                android:text="@string/trip_confirm_route_time_text"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/MiddleTitleStyle" />
 
@@ -81,8 +82,8 @@
                 android:layout_height="wrap_content">
 
                 <include
-                    android:id="@+id/dateTimeBlock"
-                    layout="@layout/block_trip_date_time" />
+                    android:id="@+id/routeTimeBlock"
+                    layout="@layout/block_route_time" />
 
             </com.google.android.material.card.MaterialCardView>
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -93,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="@dimen/margin_medium"
-        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_small"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,6 +108,7 @@
             android:contentDescription="@null"
             android:text="@string/button_to_back_text"
             app:iconGravity="textStart"
+            android:visibility="gone"
             app:iconSize="@dimen/fab_size_32"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -122,6 +124,7 @@
             android:text="@string/new_trip_next_button_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
