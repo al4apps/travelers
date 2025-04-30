@@ -11,8 +11,11 @@ class ProfileFragment: AbstractFragment<FragmentProfileBinding>(FragmentProfileB
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.unauthorizedBlock.loginButton.setOnClickListener {
+        binding.unauthorizedBlock.registerButton.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_registrationFragment)
+        }
+        binding.unauthorizedBlock.loginButton.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
         }
         switchBlocksVisibility(false)
     }

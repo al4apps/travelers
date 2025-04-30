@@ -133,6 +133,7 @@
     <style name="FilledButtonStyle" parent="Widget.Material3.Button">
         <item name="cornerRadius">@dimen/card_corner_small</item>
         <item name="android:paddingVertical">0dp</item>
+        <item name="android:paddingHorizontal">@dimen/padding_small_12</item>
         <item name="android:textAppearance">@style/GeologicaReg16</item>
     </style>
 
@@ -169,7 +170,8 @@
 
     <!--  Стиль для полноэкранных диалогов-->
     <style name="FullScreenDialog">
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowMinWidthMajor">100%</item>
         <item name="android:windowMinWidthMinor">100%</item>

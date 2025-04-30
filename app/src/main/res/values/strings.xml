@@ -81,7 +81,7 @@
     <string name="profile_unauth_block_title">Создайте аккаунт</string>
     <string name="profile_unauth_block_title2">Создайте аккаунт или Войдите</string>
     <string name="profile_unauth_block_description">и начните зарабатывать на своих поездках!</string>
-<!--    <string name="profile_unauth_block_description">чтобы зарабатывать на своих поездках</string>-->
+    <!--    <string name="profile_unauth_block_description">чтобы зарабатывать на своих поездках</string>-->
     <string name="profile_unauth_block_description2">Уже есть аккаунт?</string>
     <string name="profile_login_button_text">Войти</string>
     <string name="profile_register_button_text">Создать аккаунт</string>
@@ -94,6 +94,8 @@
     <string name="profile_option_agreement_text">Пользовательское соглашение</string>
     <string name="profile_option_logout_text">Выйти из аккаунта</string>
     <string name="account_settings_toolbar_title">Настройки аккаунта</string>
+
+    <!--    Регистрация -->
     <string name="registration_toolbar_title">Регистрация</string>
     <string name="registration_title">Регистрация</string>
     <string name="registration_name_hint">Имя</string>
@@ -108,7 +110,7 @@
     <string name="registration_phone_registered_error">Номер уже зарегистрирован!</string>
     <string name="registration_finish_dialog_title">Подтвердите номер телефона</string>
     <string name="registration_finish_dialog_description">для завершения регистрации</string>
-    <string name="registration_finish_dialog_sms_send_description">Вам отправлен SMS с кодом подтверждения</string>
+    <string name="registration_finish_dialog_sms_send_description">Вам отправлен SMS с кодом подтверждения\nна номер %s</string>
     <string name="registration_finish_dialog_no_sms_description">Не приходит SMS? Вы можете запросить\nкод повторно через %d секунд.</string>
     <string name="registration_finish_dialog_no_sms">Не пришло SMS?</string>
     <string name="registration_finish_dialog_sms_new">Отправить повторно</string>
@@ -121,5 +123,13 @@
     <string name="menu_phone_tj" translatable="false">+992</string>
     <string name="menu_phone_uz" translatable="false">+998</string>
     <string name="menu_phone_kg" translatable="false">+996</string>
+
+    <!--    Вход -->
+    <string name="login_title">Вход в аккаунт</string>
+    <string name="login_phone_not_registered_text">Аккаунт с таким номером не найден</string>
+    <string name="login_register_button_text">зарегистрироваться</string>
+    <string name="login_sign_in_button_text">Войти</string>
+    <string name="login_finish_dialog_sms_send_description">Вам отправлен SMS с кодом \nна номер %s</string>
+    <string name="login_finish_dialog_title">Введите код из SMS</string>
 
 </resources>

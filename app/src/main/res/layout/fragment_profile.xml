@@ -26,15 +26,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        tools:visibility="gone" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
     <ScrollView
         android:id="@+id/scrollAuthLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:visibility="gone"
-        tools:visibility="visible"
+        tools:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -272,5 +272,4 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
