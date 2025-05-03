@@ -141,4 +141,7 @@
     <string name="my_cars_toolbar_title">Мои машины</string>
     <string name="my_cars_add_car_text">добавить машину</string>"
 
+    <!--    Мои поездки -->
+    <string name="my_trips_toolbar_title">Мои поездки</string>
+
 </resources>

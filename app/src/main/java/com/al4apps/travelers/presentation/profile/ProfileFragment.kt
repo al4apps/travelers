@@ -20,6 +20,13 @@ class ProfileFragment: AbstractFragment<FragmentProfileBinding>(FragmentProfileB
         binding.authInfoCard.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_profileEditFragment)
         }
+        binding.myCarsCard.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_myCarsFragment)
+        }
+        binding.myTripsCard.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_myTripsFragment)
+        }
+
 
         switchBlocksVisibility(true)
     }

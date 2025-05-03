@@ -13,15 +13,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/arrow_left"
-        app:title="@string/my_cars_toolbar_title"
+        app:title="@string/my_trips_toolbar_title"
         app:titleCentered="true"
         app:titleTextAppearance="@style/ToolbarTextStyle" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/carsRecyclerView"
+        android:id="@+id/tripsRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        tools:listitem="@layout/item_my_car"
+        tools:listitem="@layout/item_my_trip"
         android:paddingTop="@dimen/padding_small"
         tools:itemCount="3"
         android:paddingHorizontal="@dimen/padding_small"
