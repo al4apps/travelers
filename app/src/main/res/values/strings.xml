@@ -105,6 +105,7 @@
     <string name="registration_password_hint">Пароль</string>
     <string name="registration_password_2_hint">Повторите пароль</string>
     <string name="registration_phone_hint">Номер телефона</string>
+    <string name="registration_whatsapp_description">Добавьте номер WhatsApp для связи</string>
     <string name="registration_phone_registered_text">Этот номер уже зарегистрирован!</string>
     <string name="registration_phone_registered_text_2">Попробуйте</string>
     <string name="registration_phone_registered_error">Номер уже зарегистрирован!</string>
@@ -131,5 +132,10 @@
     <string name="login_sign_in_button_text">Войти</string>
     <string name="login_finish_dialog_sms_send_description">Вам отправлен SMS с кодом \nна номер %s</string>
     <string name="login_finish_dialog_title">Введите код из SMS</string>
+    <string name="profile_edit_whatsapp_description">Номер WhatsApp</string>
+    <string name="profile_edit_save_button_text">Сохранить</string>
+    <string name="profile_edit_lastname_hint">Фамилия</string>
+    <string name="profile_edit_wa_number_hint">Введите номер с кодом страны</string>
+
 
 </resources>

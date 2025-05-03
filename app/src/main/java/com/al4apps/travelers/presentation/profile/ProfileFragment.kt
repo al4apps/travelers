@@ -17,7 +17,11 @@ class ProfileFragment: AbstractFragment<FragmentProfileBinding>(FragmentProfileB
         binding.unauthorizedBlock.loginButton.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
         }
-        switchBlocksVisibility(false)
+        binding.authInfoCard.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_profileEditFragment)
+        }
+
+        switchBlocksVisibility(true)
     }
 
     private fun switchBlocksVisibility(isAuthorized: Boolean) {

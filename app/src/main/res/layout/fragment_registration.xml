@@ -38,6 +38,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/nameInputLayout"
             style="@style/TextInputLayoutStyle"
+            app:startIconDrawable="@drawable/profile"
+            android:hint="@string/registration_name_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -55,29 +57,29 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/margin_small"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/lastnameInputLayout"
-            style="@style/TextInputLayoutStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/lastnameEditText"
-                style="@style/AddressEditTextStyle"
-                android:inputType="textCapSentences"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/basic_edit_text_height"
-                android:hint="@string/registration_lastname_hint"
-                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/margin_small"/>
-
         <include
             android:id="@+id/phoneBlock"
             layout="@layout/block_phone_text_field"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_medium" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_small"
+            android:text="@string/registration_whatsapp_description"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/GreyDescriptionTextStyle" />
+
+        <include
+            android:id="@+id/whatsappTextFieldBlock"
+            layout="@layout/block_phone_text_field_wa" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_large_48"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/errorText"

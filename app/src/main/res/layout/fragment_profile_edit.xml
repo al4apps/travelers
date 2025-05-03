@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/arrow_left"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:paddingBottom="@dimen/padding_under_scroll_layout"
+            android:clipToPadding="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/ProfileImageCardViewStyle"
+                android:layout_width="@dimen/profile_edit_image_size"
+                android:layout_height="@dimen/profile_edit_image_size"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_circle"
+                    tools:src="@tools:sample/avatars" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_edit_image_card_blur_layout_height"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_blur"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/icon_size_16"
+                        android:layout_height="@dimen/icon_size_16"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/margin_extra_small"
+                        android:src="@drawable/icon_edit"
+                        android:tint="@color/white_focus" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_medium" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/profile"
+                app:endIconDrawable="@drawable/icon_edit"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEditText"
+                    style="@style/AddressEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/basic_edit_text_height"
+                    android:drawablePadding="-4dp"
+                    android:hint="@string/registration_name_hint"
+                    android:inputType="textCapSentences"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck"
+                    tools:text="@tools:sample/full_names" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_medium" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/phone"
+                app:endIconDrawable="@drawable/icon_edit"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneEditText"
+                    style="@style/AddressEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/basic_edit_text_height"
+                    android:drawablePadding="-4dp"
+                    android:hint="@string/registration_name_hint"
+                    android:inputType="none"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck"
+                    tools:text="+992 98 100 5050" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_medium" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_extra_small"
+                android:text="@string/profile_edit_whatsapp_description"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/GreyDescriptionTextStyle" />
+
+            <include
+                android:id="@+id/whatsappTextFieldBlock"
+                layout="@layout/block_phone_text_field_wa" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        style="@style/FilledButtonStyle"
+        android:layout_width="@dimen/button_width_std"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/profile_edit_save_button_text"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

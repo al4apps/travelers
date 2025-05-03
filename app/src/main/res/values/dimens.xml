@@ -51,4 +51,8 @@
     <dimen name="profile_auth_info_block_height">60dp</dimen>
     <dimen name="phone_menu_width">68dp</dimen>
     <dimen name="phone_block_edit_text_drawable_padding">28dp</dimen>
+    <dimen name="profile_edit_image_size">120dp</dimen>
+    <dimen name="profile_edit_image_card_radius">60dp</dimen>
+    <dimen name="profile_edit_image_card_blur_layout_height">24dp</dimen>
+
 </resources>

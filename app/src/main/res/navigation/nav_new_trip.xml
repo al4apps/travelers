@@ -41,6 +41,20 @@
         <action
             android:id="@+id/action_newTripFragment_to_newTripStep1Fragment"
             app:destination="@id/newTripStep1Fragment" />
+        <action
+            android:id="@+id/action_newTripFragment_to_loginFragmentOnNewTrip"
+            app:destination="@id/loginFragmentOnNewTrip" />
+        <action
+            android:id="@+id/action_newTripFragment_to_registrationFragmentOnNewTrip"
+            app:destination="@id/registrationFragmentOnNewTrip" />
     </fragment>
+    <fragment
+        android:id="@+id/loginFragmentOnNewTrip"
+        android:name="com.al4apps.travelers.presentation.login.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/registrationFragmentOnNewTrip"
+        android:name="com.al4apps.travelers.presentation.registration.RegistrationFragment"
+        android:label="RegistrationFragment" />
 
 </navigation>
