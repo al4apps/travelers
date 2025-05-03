@@ -13,9 +13,8 @@ class ProfileEditFragment: AbstractFragment<FragmentProfileEditBinding>(
         super.onViewCreated(view, savedInstanceState)
 
         with(binding) {
-            nameEditText.setText("Эшмат")
-            lastnameEditText.setText("Тошматов")
-            phoneBlock.phoneEditText.setText("99 999 99 99")
+            nameEditText.setText("Тошмат Эшматов")
+            phoneEditText.setText("99 999 99 99")
             whatsappTextFieldBlock.phoneEditText.setText("+992 99 999 99 99")
 
         }

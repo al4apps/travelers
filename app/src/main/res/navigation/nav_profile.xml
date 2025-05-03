@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_profileFragment_to_profileEditFragment"
             app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myCarsFragment"
+            app:destination="@id/myCarsFragment" />
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
@@ -30,4 +33,8 @@
         android:id="@+id/profileEditFragment"
         android:name="com.al4apps.travelers.presentation.profile.ProfileEditFragment"
         android:label="ProfileEditFragment" />
+    <fragment
+        android:id="@+id/myCarsFragment"
+        android:name="com.al4apps.travelers.presentation.mycars.MyCarsFragment"
+        android:label="MyCarsFragment" />
 </navigation>

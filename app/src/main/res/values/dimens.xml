@@ -54,5 +54,8 @@
     <dimen name="profile_edit_image_size">120dp</dimen>
     <dimen name="profile_edit_image_card_radius">60dp</dimen>
     <dimen name="profile_edit_image_card_blur_layout_height">24dp</dimen>
+    <dimen name="my_cars_car_image_size">90dp</dimen>
+    <dimen name="item_my_car_height">106dp</dimen>
+
 
 </resources>
