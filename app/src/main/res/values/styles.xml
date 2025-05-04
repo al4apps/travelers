@@ -197,7 +197,7 @@
         <item name="android:windowBackground">@color/grey_dialog_background</item>
     </style>
 
-    <style name="AddressEditTextStyle">
+    <style name="SimpleEditTextStyle">
         <item name="android:inputType">textCapSentences|textAutoComplete</item>
         <item name="android:lines">1</item>
         <item name="android:paddingVertical">0dp</item>

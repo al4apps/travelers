@@ -136,12 +136,18 @@
     <string name="profile_edit_save_button_text">Сохранить</string>
     <string name="profile_edit_lastname_hint">Фамилия</string>
     <string name="profile_edit_wa_number_hint">Введите номер с кодом страны</string>
-    
+
     <!--    Мои машины -->
     <string name="my_cars_toolbar_title">Мои машины</string>
     <string name="my_cars_add_car_text">добавить машину</string>"
 
     <!--    Мои поездки -->
     <string name="my_trips_toolbar_title">Мои поездки</string>
+
+    <!--    Настройки -->
+    <string name="settings_toolbar_title">Настройки</string>
+    <string name="settings_language_option_title">Язык</string>
+    <string name="settings_theme_option_title">Темный режим</string>
+
 
 </resources>

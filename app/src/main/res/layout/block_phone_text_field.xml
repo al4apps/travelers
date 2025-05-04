@@ -17,7 +17,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneEditText"
-            style="@style/AddressEditTextStyle"
+            style="@style/SimpleEditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/basic_edit_text_height"
             android:drawablePadding="@dimen/phone_block_edit_text_drawable_padding"

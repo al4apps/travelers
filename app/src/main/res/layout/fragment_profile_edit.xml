@@ -79,7 +79,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameEditText"
-                    style="@style/AddressEditTextStyle"
+                    style="@style/SimpleEditTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/basic_edit_text_height"
                     android:drawablePadding="-4dp"
@@ -104,7 +104,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/phoneEditText"
-                    style="@style/AddressEditTextStyle"
+                    style="@style/SimpleEditTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/basic_edit_text_height"
                     android:drawablePadding="-4dp"
@@ -136,6 +136,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/saveButton"
         style="@style/FilledButtonStyle"
+        android:visibility="invisible"
         android:layout_width="@dimen/button_width_std"
         android:layout_height="@dimen/button_height"
         android:layout_gravity="center_horizontal|bottom"

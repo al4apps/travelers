@@ -17,7 +17,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fromEditText"
-            style="@style/AddressEditTextStyle"
+            style="@style/SimpleEditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_address_from_hint"
@@ -34,7 +34,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/destEditText"
-            style="@style/AddressEditTextStyle"
+            style="@style/SimpleEditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_address_destination_hint"
@@ -51,7 +51,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/calendarEditText"
-            style="@style/AddressEditTextStyle"
+            style="@style/SimpleEditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_calendar_hint"
@@ -72,7 +72,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/countEditText"
-            style="@style/AddressEditTextStyle"
+            style="@style/SimpleEditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_count_hint"
