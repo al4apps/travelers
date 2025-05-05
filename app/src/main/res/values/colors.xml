@@ -142,7 +142,11 @@
     <color name="md_theme_surfaceContainerHigh_highContrast">#D0D5D7</color>
     <color name="md_theme_surfaceContainerHighest_highContrast">#C2C7C9</color>
 
+<!--    <color name="theme_primary_bg">#1A00B4D8</color>-->
+    <color name="theme_primary_bg">@color/md_theme_secondaryContainer</color>
     <color name="cyan_bg">#90E0EF</color>
+    <color name="cyan_bg_60">#9990E0EF</color>
+    <color name="cyan_bg_70">#B390E0EF</color>
     <color name="green_bg">#9ef01a</color>
     <color name="blue_dest_a">#0077B6</color>
     <color name="blue_text">#00B4D8</color>
