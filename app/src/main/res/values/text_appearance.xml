@@ -24,7 +24,7 @@
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="CardMediumTextStyle" parent="GeologicaReg16"/>
+    <style name="AppMediumTextStyle" parent="GeologicaReg16"/>
 
     <style name="GeologicaRegular24" parent="TextAppearance.Material3.TitleMedium">
         <item name="fontFamily">@font/geologica_regular</item>

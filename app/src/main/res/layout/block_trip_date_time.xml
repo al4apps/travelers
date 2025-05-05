@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_medium"
             tools:visibility="gone"
-            android:textAppearance="@style/CardMediumTextStyle"
+            android:textAppearance="@style/AppMediumTextStyle"
             tools:text="Вторник, 22 апреля" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

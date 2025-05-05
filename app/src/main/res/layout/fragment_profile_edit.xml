@@ -14,6 +14,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/arrow_left"
+            app:title="@string/profile_edit_toolbar_title"
             app:titleCentered="true"
             app:titleTextAppearance="@style/ToolbarTextStyle" />
 
@@ -100,6 +101,7 @@
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/phone"
                 app:endIconDrawable="@drawable/icon_edit"
+                app:endIconTint="@color/grey_focus"
                 app:endIconMode="custom">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -109,6 +111,7 @@
                     android:layout_height="@dimen/basic_edit_text_height"
                     android:drawablePadding="-4dp"
                     android:hint="@string/registration_name_hint"
+                    android:enabled="false"
                     android:inputType="none"
                     tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck"
                     tools:text="+992 98 100 5050" />

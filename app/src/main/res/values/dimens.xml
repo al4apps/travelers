@@ -56,6 +56,7 @@
     <dimen name="profile_edit_image_card_blur_layout_height">24dp</dimen>
     <dimen name="my_cars_car_image_size">90dp</dimen>
     <dimen name="item_my_car_height">106dp</dimen>
+    <dimen name="settings_block_inner_height">32dp</dimen>
 
 
 </resources>

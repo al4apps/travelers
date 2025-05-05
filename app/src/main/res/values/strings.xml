@@ -94,6 +94,9 @@
     <string name="profile_option_agreement_text">Пользовательское соглашение</string>
     <string name="profile_option_logout_text">Выйти из аккаунта</string>
     <string name="account_settings_toolbar_title">Настройки аккаунта</string>
+    <string name="dialog_account_exit_text">Выйти из аккаунта?</string>
+    <string name="cancel_button_text">Отмена</string>
+    <string name="dialog_exit_button_text">Выйти</string>
 
     <!--    Регистрация -->
     <string name="registration_toolbar_title">Регистрация</string>
@@ -144,10 +147,30 @@
     <!--    Мои поездки -->
     <string name="my_trips_toolbar_title">Мои поездки</string>
 
+    <!--    Настройки профиля -->
+    <string name="profile_edit_toolbar_title">Настройки профиля</string>
+
     <!--    Настройки -->
     <string name="settings_toolbar_title">Настройки</string>
     <string name="settings_language_option_title">Язык</string>
     <string name="settings_theme_option_title">Темный режим</string>
 
+    <!--    Помощь -->
+    <string name="help_toolbar_title">Помощь</string>
+    <string name="help_write_us_title">Напишите нам</string>
+    <string name="help_write_us_description">если у вас появились вопросы</string>
+    <string name="help_hint_name">Ваше имя</string>
+    <string name="help_hint_email">Ваш Email</string>
+    <string name="help_hint_message">Напишите ваш вопрос</string>
+    <string name="help_add_file_text">Прикрепить файл</string>
+    <string name="help_send_message_button_text">Отправить</string>
+
+    <!--    Политика конфиденциальности -->
+    <string name="privacy_policy_toolbar_title">Политика конфиденциальности</string>
+    <string name="privacy_policy_screen_title">Политика\nконфиденциальности</string>
+
+    <!--    Пользовательское соглашение -->
+    <string name="user_agreement_toolbar_title">Пользовательское соглашение</string>
+    <string name="user_agreement_screen_title">Пользовательское\nсоглашение</string>
 
 </resources>

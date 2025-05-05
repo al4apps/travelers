@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_medium"
-            android:textAppearance="@style/CardMediumTextStyle"
+            android:textAppearance="@style/AppMediumTextStyle"
             tools:text="Вторник, 22 апреля" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_medium"
             android:maxLines="2"
-            android:textAppearance="@style/CardMediumTextStyle"
+            android:textAppearance="@style/AppMediumTextStyle"
             tools:text="г. Худжанд, Таджикистан" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

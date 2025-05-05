@@ -26,6 +26,15 @@
         <action
             android:id="@+id/action_profileFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userAgreementFragment"
+            app:destination="@id/userAgreementFragment" />
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
@@ -51,4 +60,16 @@
         android:id="@+id/settingsFragment"
         android:name="com.al4apps.travelers.presentation.settings.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.al4apps.travelers.presentation.help.HelpFragment"
+        android:label="HelpFragment" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.al4apps.travelers.presentation.documentation.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment" />
+    <fragment
+        android:id="@+id/userAgreementFragment"
+        android:name="com.al4apps.travelers.presentation.documentation.UserAgreementFragment"
+        android:label="UserAgreementFragment" />
 </navigation>

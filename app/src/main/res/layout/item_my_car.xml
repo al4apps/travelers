@@ -48,7 +48,7 @@
                 android:autoSizeMaxTextSize="16sp"
                 android:autoSizeTextType="uniform"
                 android:lines="1"
-                android:textAppearance="@style/CardMediumTextStyle"
+                android:textAppearance="@style/AppMediumTextStyle"
                 tools:text="Toyota Camry" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
