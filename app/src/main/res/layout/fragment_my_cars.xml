@@ -23,12 +23,24 @@
         android:layout_height="0dp"
         tools:listitem="@layout/item_my_car"
         android:paddingTop="@dimen/padding_small"
-        tools:itemCount="3"
+        tools:itemCount="0"
         android:paddingHorizontal="@dimen/padding_small"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addCarButton"
+        style="@style/OutlinedButtonStyle"
+        android:layout_width="@dimen/button_max_width"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/my_cars_add_car_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/carsRecyclerView"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

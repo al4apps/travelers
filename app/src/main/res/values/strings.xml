@@ -142,7 +142,18 @@
 
     <!--    Мои машины -->
     <string name="my_cars_toolbar_title">Мои машины</string>
-    <string name="my_cars_add_car_text">добавить машину</string>"
+    <string name="my_cars_add_car_text">добавить машину</string>
+    <string name="my_cars_add_car_button_text">Добавить машину</string>
+
+    <!--    Добавить машину -->
+    <string name="add_car_toolbar_title">Добавить машину</string>
+    <string name="new_car_add_button_text">Добавить</string>
+    <string name="new_car_add_car_dialog_title">Добавить машину</string>
+    <string name="new_car_add_photo_text">Добавить фото</string>
+    <string name="new_car_car_brand_hint">Выберите марку</string>
+    <string name="new_car_car_model_hint">Выберите модель</string>
+    <string name="new_car_car_year_hint">Год</string>
+    <string name="new_car_car_color_hint">Цвет</string>
 
     <!--    Мои поездки -->
     <string name="my_trips_toolbar_title">Мои поездки</string>

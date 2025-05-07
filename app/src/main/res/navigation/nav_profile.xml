@@ -51,7 +51,11 @@
     <fragment
         android:id="@+id/myCarsFragment"
         android:name="com.al4apps.travelers.presentation.mycars.MyCarsFragment"
-        android:label="MyCarsFragment" />
+        android:label="MyCarsFragment" >
+        <action
+            android:id="@+id/action_myCarsFragment_to_newCarFragment"
+            app:destination="@id/newCarFragment" />
+    </fragment>
     <fragment
         android:id="@+id/myTripsFragment"
         android:name="com.al4apps.travelers.presentation.mytrips.MyTripsFragment"
@@ -72,4 +76,8 @@
         android:id="@+id/userAgreementFragment"
         android:name="com.al4apps.travelers.presentation.documentation.UserAgreementFragment"
         android:label="UserAgreementFragment" />
+    <fragment
+        android:id="@+id/newCarFragment"
+        android:name="com.al4apps.travelers.presentation.mycars.NewCarFragment"
+        android:label="NewCarFragment" />
 </navigation>

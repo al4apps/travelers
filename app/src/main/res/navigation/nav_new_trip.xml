@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/menu_trip"
     app:startDestination="@id/newTripFragment">
 
     <fragment
         android:id="@+id/newTripStep1Fragment"
         android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep1Fragment"
-        android:label="NewTripStep1Fragment" >
+        android:label="NewTripStep1Fragment"
+        tools:layout="@layout/fragment_new_trip_step_1">
         <action
             android:id="@+id/action_newTripStep1Fragment_to_newTripStep2Fragment"
             app:destination="@id/newTripStep2Fragment" />
@@ -15,7 +17,8 @@
     <fragment
         android:id="@+id/newTripStep2Fragment"
         android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep2Fragment"
-        android:label="NewTripStep2Fragment" >
+        android:label="NewTripStep2Fragment"
+        tools:layout="@layout/fragment_new_trip_step_2">
         <action
             android:id="@+id/action_newTripStep2Fragment_to_newTripStep3Fragment"
             app:destination="@id/newTripStep3Fragment" />
@@ -24,16 +27,21 @@
     <fragment
         android:id="@+id/newTripStep3Fragment"
         android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep3Fragment"
-        android:label="NewTripStep3Fragment" >
+        android:label="NewTripStep3Fragment"
+        tools:layout="@layout/fragment_new_trip_step_3">
         <action
             android:id="@+id/action_newTripStep3Fragment_to_newTripStep4Fragment"
             app:destination="@id/newTripStep4Fragment" />
+        <action
+            android:id="@+id/action_newTripStep3Fragment_to_newCarFragmentOnNewTrip"
+            app:destination="@id/newCarFragmentOnNewTrip" />
     </fragment>
 
     <fragment
         android:id="@+id/newTripStep4Fragment"
         android:name="com.al4apps.travelers.presentation.newtrip.NewTripStep4Fragment"
-        android:label="NewTripStep4Fragment" />
+        android:label="NewTripStep4Fragment"
+        tools:layout="@layout/fragment_new_trip_step_4"/>
     <fragment
         android:id="@+id/newTripFragment"
         android:name="com.al4apps.travelers.presentation.newtrip.NewTripFragment"
@@ -56,5 +64,9 @@
         android:id="@+id/registrationFragmentOnNewTrip"
         android:name="com.al4apps.travelers.presentation.registration.RegistrationFragment"
         android:label="RegistrationFragment" />
+    <fragment
+        android:id="@+id/newCarFragmentOnNewTrip"
+        android:name="com.al4apps.travelers.presentation.mycars.NewCarFragment"
+        android:label="NewCarFragment" />
 
 </navigation>
