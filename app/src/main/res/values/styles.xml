@@ -118,7 +118,6 @@
     </style>
 
 
-
     <style name="TripPriceCardViewStyle" parent="Widget.Material3.CardView.Filled">
         <item name="cardBackgroundColor">@color/md_theme_surface</item>
         <item name="contentPaddingLeft">@dimen/padding_small_12</item>
@@ -181,7 +180,7 @@
 
     <style name="SmallFabButtonStyle" parent="Widget.Material3.Button.IconButton.Outlined">
         <item name="strokeColor">@color/md_theme_primary</item>
-        <item name="strokeWidth">1dp</item>
+        <item name="strokeWidth">2dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetRight">0dp</item>
         <item name="android:insetLeft">0dp</item>
@@ -201,8 +200,7 @@
         <item name="android:textColorHint">@color/grey_focus</item>
     </style>
 
-    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
-    </style>
+    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox"></style>
 
     <!--  Стиль для полноэкранных диалогов-->
     <style name="FullScreenDialog">
@@ -233,5 +231,9 @@
         <item name="android:textAlignment">textStart</item>
         <item name="android:paddingVertical">@dimen/padding_small</item>
         <item name="android:textAppearance">@style/TextFieldTextStyle</item>
+    </style>
+
+    <style name="DropdownAutocompleteInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
     </style>
 </resources>

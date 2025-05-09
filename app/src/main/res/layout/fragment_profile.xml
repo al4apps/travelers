@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,13 +62,13 @@
                     android:layout_width="@dimen/icon_size_24"
                     android:layout_height="@dimen/icon_size_24"
                     android:layout_gravity="end|center_vertical"
-                    android:src="@drawable/arrow_right" />
+                    android:src="@drawable/icon_edit" />
 
             </com.google.android.material.card.MaterialCardView>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/margin_medium" />
+                android:layout_height="@dimen/margin_large" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/myCarsCard"

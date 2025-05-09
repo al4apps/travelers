@@ -36,6 +36,11 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <style name="GeologicaLight20" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/geologica_light</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <style name="GeologicaLight14" parent="TextAppearance.Material3.BodyMedium">
         <item name="fontFamily">@font/geologica_light</item>
         <item name="android:textSize">14sp</item>
@@ -111,9 +116,8 @@
         <item name="android:textColor">@color/grey_dark</item>
     </style>
 
-    <style name="GreyDescriptionTextStyle" parent="GeologicaLight12">
-        <item name="android:textColor">@color/grey_focus</item>
-        <item name="android:textSize">13sp</item>
+    <style name="GreyDescriptionTextStyle" parent="GeologicaLight14">
+        <item name="android:textColor">@color/grey_text_focus</item>
     </style>
 
     <style name="ClickableTextStyle" parent="GeologicaLight12">
@@ -125,4 +129,8 @@
         <item name="android:textColor">@color/md_theme_onBackground</item>
     </style>
     <style name="ToolbarTextStyle" parent="GeologicaReg16"/>
+
+    <style name="GreyInfoTextStyle" parent="GeologicaRegular20">
+        <item name="android:textColor">@color/grey_text_focus</item>
+    </style>
 </resources>

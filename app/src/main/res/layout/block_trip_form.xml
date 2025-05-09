@@ -58,6 +58,23 @@
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/margin_medium"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/search_field_count_hint"-->
+<!--        android:textAppearance="@style/GreyDescriptionTextStyle"/>-->
+
+<!--    <include-->
+<!--        android:id="@+id/seatsBlock"-->
+<!--        android:layout_marginHorizontal="@dimen/margin_medium"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/margin_extra_small"-->
+<!--        layout="@layout/block_plus_minus_big"/>-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/countInputLayout"
@@ -66,13 +83,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_weight="1"
-        app:endIconDrawable="@drawable/plus"
+        android:visibility="visible"
+        app:endIconDrawable="@drawable/plus_big"
+        app:endIconTint="@color/md_theme_primary"
         app:endIconMode="custom"
         app:startIconDrawable="@drawable/profile">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/countEditText"
             style="@style/SimpleEditTextStyle"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="@dimen/basic_edit_text_height"
             android:hint="@string/search_field_count_hint"

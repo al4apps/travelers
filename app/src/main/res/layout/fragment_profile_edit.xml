@@ -136,17 +136,34 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/saveButton"
-        style="@style/FilledButtonStyle"
-        android:visibility="invisible"
-        android:layout_width="@dimen/button_width_std"
-        android:layout_height="@dimen/button_height"
-        android:layout_gravity="center_horizontal|bottom"
-        android:text="@string/profile_edit_save_button_text"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_marginBottom="@dimen/margin_small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteAccountButton"
+            style="@style/TextButtonStyle"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_button_height"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/focus_red_FF6262"
+            android:text="@string/profile_edit_delete_account_button_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            style="@style/FilledButtonStyle"
+            android:visibility="invisible"
+            android:layout_width="@dimen/button_width_std"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/profile_edit_save_button_text" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

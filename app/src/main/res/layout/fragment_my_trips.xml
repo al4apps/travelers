@@ -23,12 +23,24 @@
         android:layout_height="0dp"
         tools:listitem="@layout/item_my_trip"
         android:paddingTop="@dimen/padding_small"
-        tools:itemCount="3"
+        tools:itemCount="0"
         android:paddingHorizontal="@dimen/padding_small"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/noTripsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_trips_no_trips_text"
+        android:textAlignment="center"
+        android:textAppearance="@style/GreyInfoTextStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
