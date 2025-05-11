@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/help_toolbar_title"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/help_write_us_title"
+                android:textAlignment="center"
+                android:textAppearance="@style/ScreenTitleStyle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_write_us_description"
+                android:textAlignment="center"
+                android:textAppearance="@style/AppMediumTextStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_medium" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEditText"
+                    style="@style/SimpleEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/basic_edit_text_height"
+                    android:hint="@string/help_hint_name"
+                    android:inputType="textCapSentences"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEditText"
+                    style="@style/SimpleEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/basic_edit_text_height"
+                    android:hint="@string/help_hint_email"
+                    android:inputType="textCapSentences"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/messageInputLayout"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/write_us_message_length"
+                app:counterTextColor="@color/grey_focus"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/messageEditText"
+                    style="@style/WriteUsEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/help_hint_message"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/addFileLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/clip" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:text="@string/help_add_file_text"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="@color/grey_clickable_text_color"
+                    android:paddingVertical="@dimen/margin_extra_small"
+                    android:textAppearance="@style/GreyDescriptionTextStyle"
+                    tools:ignore="TextContrastCheck" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Input.Icon"
+                android:id="@+id/file1Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:visibility="gone"
+                tools:text="Sdfasff.png"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Input.Icon"
+                android:id="@+id/file2Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:visibility="gone"
+                tools:text="Sdsadfdfdf dsfsdbfsdfsdbn ds.,fsdf,.sdfbsd,. msdfsdffasff.png"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Input.Icon"
+                android:id="@+id/file3Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:visibility="gone"
+                tools:text="Sdfasff.png"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/FilledButtonStyle"
+                android:id="@+id/sendButton"
+                android:layout_width="@dimen/button_max_width"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="@string/help_send_message_button_text"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_gravity="center"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

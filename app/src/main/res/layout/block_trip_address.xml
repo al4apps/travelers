@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-                android:textAppearance="@style/CardMediumTextStyle"
+                android:textAppearance="@style/AppMediumTextStyle"
                 tools:text="Лаккон" />
 
             <androidx.appcompat.widget.AppCompatTextView

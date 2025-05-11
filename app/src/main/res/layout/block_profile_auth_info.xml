@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/profile_auth_info_block_height">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="@dimen/profile_ava_image_size"
+        android:layout_height="@dimen/profile_ava_image_size"
+        app:cardBackgroundColor="@color/md_theme_background"
+        app:cardCornerRadius="@dimen/profile_ava_card_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profileAvaImageView"
+            android:layout_width="@dimen/profile_ava_image_size"
+            android:layout_height="@dimen/profile_ava_image_size"
+            android:src="@drawable/profile_circle" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usernameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textAppearance="@style/AppMediumTextStyle"
+        app:layout_constraintBottom_toTopOf="@+id/userPhoneText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/materialCardView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Искандар" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userPhoneText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textSize="14sp"
+        android:textColor="@color/grey_dark"
+        android:textAppearance="@style/AppMediumTextStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/materialCardView2"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText"
+        tools:text="+99298000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

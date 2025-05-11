@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    <include
+        android:id="@+id/unauthorizedBlock"
+        layout="@layout/block_profile_unauthorized"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollAuthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/authLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/margin_medium">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/authInfoCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@drawable/profile_user_info_bg_selector">
+
+                <include
+                    android:id="@+id/authInfoBlock"
+                    layout="@layout/block_profile_auth_info" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/icon_edit" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_large" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/myCarsCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_my_cars_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/arrow_right" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/myTripsCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_my_trips_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/arrow_right" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/settingsCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_settings_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/arrow_right" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/helpCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_help_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/arrow_right" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/privacyPolicyCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_privacy_policy_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/arrow_right" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/userAgreementCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_agreement_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/arrow_right" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/logoutCard"
+                style="@style/ProfileCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:text="@string/profile_option_logout_text"
+                    android:textAppearance="@style/ProfileOptionTextStyle" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/icon_size_24"
+                    android:layout_height="@dimen/icon_size_24"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/exit" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_small" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

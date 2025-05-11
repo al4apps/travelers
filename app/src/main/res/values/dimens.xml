@@ -21,8 +21,9 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_small_10">10dp</dimen>
 
-    <dimen name="card_corner_16">16dp</dimen>
-    <dimen name="card_corner_8">8dp</dimen>
+    <dimen name="card_corner_medium">16dp</dimen>
+    <dimen name="card_corner_small">8dp</dimen>
+    <dimen name="card_corner_large">24dp</dimen>
 
     <dimen name="button_max_width">240dp</dimen>
     <dimen name="button_height">44dp</dimen>
@@ -45,4 +46,18 @@
     <dimen name="edit_text_1_line_height">32dp</dimen>
     <dimen name="basic_edit_text_height">40dp</dimen>
     <dimen name="padding_under_scroll_layout">60dp</dimen>
+    <dimen name="profile_ava_image_size">40dp</dimen>
+    <dimen name="profile_ava_card_radius">20dp</dimen>
+    <dimen name="profile_auth_info_block_height">60dp</dimen>
+    <dimen name="phone_menu_width">68dp</dimen>
+    <dimen name="phone_block_edit_text_drawable_padding">28dp</dimen>
+    <dimen name="profile_edit_image_size">120dp</dimen>
+    <dimen name="profile_edit_image_card_radius">60dp</dimen>
+    <dimen name="profile_edit_image_card_blur_layout_height">24dp</dimen>
+    <dimen name="my_cars_car_image_size">90dp</dimen>
+    <dimen name="item_my_car_height">106dp</dimen>
+    <dimen name="settings_block_inner_height">32dp</dimen>
+    <dimen name="new_car_car_image_size">200dp</dimen>
+
+
 </resources>

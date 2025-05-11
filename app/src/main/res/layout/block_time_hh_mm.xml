@@ -15,7 +15,7 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="@dimen/margin_medium"
             android:text="@string/two_points"
-            android:textAppearance="@style/CardMediumTextStyle" />
+            android:textAppearance="@style/AppMediumTextStyle" />
 
         <include
             android:id="@+id/minutesBlock"

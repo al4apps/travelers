@@ -51,15 +51,72 @@
         <item name="contentPaddingTop">@dimen/padding_large</item>
         <item name="contentPaddingBottom">@dimen/padding_large_32</item>
         <item name="strokeWidth">0dp</item>
-        <item name="cardCornerRadius">@dimen/card_corner_16</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
+    </style>
+
+    <style name="DialogCardViewStyle" parent="Widget.Material3.CardView.Outlined">
+        <item name="contentPaddingLeft">@dimen/padding_medium</item>
+        <item name="contentPaddingRight">@dimen/padding_medium</item>
+        <item name="contentPaddingTop">@dimen/padding_large</item>
+        <item name="contentPaddingBottom">@dimen/padding_large_32</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
     </style>
 
     <style name="TripCardViewStyle" parent="Widget.Material3.CardView.Outlined">
         <item name="cardBackgroundColor">@color/md_theme_surface</item>
         <item name="contentPadding">@dimen/padding_medium</item>
         <item name="strokeWidth">1dp</item>
-        <item name="cardCornerRadius">@dimen/card_corner_16</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
     </style>
+
+    <style name="ProfileCardViewStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/theme_primary_bg</item>
+        <item name="contentPadding">@dimen/padding_medium</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="contentPaddingTop">@dimen/padding_small</item>
+        <item name="contentPaddingBottom">@dimen/padding_small</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
+    </style>
+
+    <style name="SettingsCardViewStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/theme_primary_bg</item>
+        <item name="contentPadding">@dimen/padding_medium</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="contentPaddingTop">@dimen/padding_small</item>
+        <item name="contentPaddingBottom">@dimen/padding_small</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
+    </style>
+
+    <style name="MyCarCardViewStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/md_theme_background</item>
+        <item name="contentPadding">@dimen/padding_medium</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="contentPaddingTop">@dimen/padding_small</item>
+        <item name="contentPaddingBottom">@dimen/padding_small</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_medium</item>
+    </style>
+
+    <style name="ImageCardViewStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/md_theme_background</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <style name="ProfileImageCardViewStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/md_theme_background</item>
+        <item name="contentPadding">0dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/profile_edit_image_card_radius</item>
+    </style>
+
 
     <style name="TripPriceCardViewStyle" parent="Widget.Material3.CardView.Filled">
         <item name="cardBackgroundColor">@color/md_theme_surface</item>
@@ -68,7 +125,7 @@
         <item name="contentPaddingTop">@dimen/padding_extra_small</item>
         <item name="contentPaddingBottom">@dimen/padding_extra_small</item>
         <item name="strokeWidth">1dp</item>
-        <item name="cardCornerRadius">@dimen/card_corner_8</item>
+        <item name="cardCornerRadius">@dimen/card_corner_small</item>
     </style>
 
     <style name="CardViewOnTripScreenStyle" parent="Widget.Material3.CardView.Elevated">
@@ -83,7 +140,7 @@
     <style name="BlurCardViewOnImageStyle" parent="Widget.Material3.CardView.Filled">
         <item name="cardBackgroundColor">@color/background_blur</item>
         <item name="strokeWidth">0dp</item>
-        <item name="cardCornerRadius">@dimen/card_corner_8</item>
+        <item name="cardCornerRadius">@dimen/card_corner_small</item>
         <item name="contentPaddingLeft">@dimen/margin_medium</item>
         <item name="contentPaddingRight">@dimen/margin_medium</item>
     </style>
@@ -103,14 +160,15 @@
     </style>
 
     <style name="OutlinedButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
-        <item name="cornerRadius">@dimen/card_corner_8</item>
+        <item name="cornerRadius">@dimen/card_corner_small</item>
         <item name="android:paddingVertical">0dp</item>
         <item name="android:textAppearance">@style/GeologicaReg16</item>
     </style>
 
     <style name="FilledButtonStyle" parent="Widget.Material3.Button">
-        <item name="cornerRadius">@dimen/card_corner_8</item>
+        <item name="cornerRadius">@dimen/card_corner_small</item>
         <item name="android:paddingVertical">0dp</item>
+        <item name="android:paddingHorizontal">@dimen/padding_small_12</item>
         <item name="android:textAppearance">@style/GeologicaReg16</item>
     </style>
 
@@ -122,7 +180,7 @@
 
     <style name="SmallFabButtonStyle" parent="Widget.Material3.Button.IconButton.Outlined">
         <item name="strokeColor">@color/md_theme_primary</item>
-        <item name="strokeWidth">1dp</item>
+        <item name="strokeWidth">2dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetRight">0dp</item>
         <item name="android:insetLeft">0dp</item>
@@ -142,22 +200,40 @@
         <item name="android:textColorHint">@color/grey_focus</item>
     </style>
 
-    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox">
-    </style>
+    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox"></style>
 
     <!--  Стиль для полноэкранных диалогов-->
     <style name="FullScreenDialog">
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowMinWidthMajor">100%</item>
         <item name="android:windowMinWidthMinor">100%</item>
         <item name="android:windowBackground">@color/grey_dialog_background</item>
     </style>
 
-    <style name="AddressEditTextStyle">
+    <style name="SimpleEditTextStyle">
         <item name="android:inputType">textCapSentences|textAutoComplete</item>
         <item name="android:lines">1</item>
         <item name="android:paddingVertical">0dp</item>
         <item name="android:textAppearance">@style/TextFieldTextStyle</item>
+    </style>
+
+    <style name="WriteUsEditTextStyle">
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">5</item>
+        <item name="android:minLines">3</item>
+        <item name="android:maxLines">6</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:maxLength">@integer/write_us_message_length</item>
+        <item name="android:gravity">top|start</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:paddingVertical">@dimen/padding_small</item>
+        <item name="android:textAppearance">@style/TextFieldTextStyle</item>
+    </style>
+
+    <style name="DropdownAutocompleteInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
     </style>
 </resources>

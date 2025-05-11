@@ -2,10 +2,82 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/menu_profile"
-    app:startDestination="@id/searchFragment3">
+    app:startDestination="@id/profileFragment">
 
     <fragment
-        android:id="@+id/searchFragment3"
-        android:name="com.al4apps.travelers.presentation.search.SearchFragment"
-        android:label="SearchFragment" />
+        android:id="@+id/profileFragment"
+        android:name="com.al4apps.travelers.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditFragment"
+            app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myCarsFragment"
+            app:destination="@id/myCarsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myTripsFragment"
+            app:destination="@id/myTripsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_userAgreementFragment"
+            app:destination="@id/userAgreementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.al4apps.travelers.presentation.registration.RegistrationFragment"
+        android:label="RegistrationFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.al4apps.travelers.presentation.login.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.al4apps.travelers.presentation.profile.ProfileEditFragment"
+        android:label="ProfileEditFragment" />
+    <fragment
+        android:id="@+id/myCarsFragment"
+        android:name="com.al4apps.travelers.presentation.mycars.MyCarsFragment"
+        android:label="MyCarsFragment" >
+        <action
+            android:id="@+id/action_myCarsFragment_to_newCarFragment"
+            app:destination="@id/newCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTripsFragment"
+        android:name="com.al4apps.travelers.presentation.mytrips.MyTripsFragment"
+        android:label="MyTripsFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.al4apps.travelers.presentation.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.al4apps.travelers.presentation.help.HelpFragment"
+        android:label="HelpFragment" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.al4apps.travelers.presentation.documentation.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment" />
+    <fragment
+        android:id="@+id/userAgreementFragment"
+        android:name="com.al4apps.travelers.presentation.documentation.UserAgreementFragment"
+        android:label="UserAgreementFragment" />
+    <fragment
+        android:id="@+id/newCarFragment"
+        android:name="com.al4apps.travelers.presentation.mycars.NewCarFragment"
+        android:label="NewCarFragment" />
 </navigation>

@@ -77,4 +77,115 @@
         <item>KG Сом</item>
     </string-array>
 
+    <!-- Profile    -->
+    <string name="profile_unauth_block_title">Создайте аккаунт</string>
+    <string name="profile_unauth_block_title2">Создайте аккаунт или Войдите</string>
+    <string name="profile_unauth_block_description">и начните зарабатывать на своих поездках!</string>
+    <!--    <string name="profile_unauth_block_description">чтобы зарабатывать на своих поездках</string>-->
+    <string name="profile_unauth_block_description2">Уже есть аккаунт?</string>
+    <string name="profile_login_button_text">Войти</string>
+    <string name="profile_register_button_text">Создать аккаунт</string>
+    <string name="profile_toolbar_title">Личный кабинет</string>
+    <string name="profile_option_my_cars_text">Мои машины</string>
+    <string name="profile_option_my_trips_text">Мои поездки</string>
+    <string name="profile_option_settings_text">Настройки</string>
+    <string name="profile_option_help_text">Помощь</string>
+    <string name="profile_option_privacy_policy_text">Политика конфиденциальности</string>
+    <string name="profile_option_agreement_text">Пользовательское соглашение</string>
+    <string name="profile_option_logout_text">Выйти из аккаунта</string>
+    <string name="account_settings_toolbar_title">Настройки аккаунта</string>
+    <string name="dialog_account_exit_text">Выйти из аккаунта?</string>
+    <string name="cancel_button_text">Отмена</string>
+    <string name="dialog_exit_button_text">Выйти</string>
+
+    <!--    Регистрация -->
+    <string name="registration_toolbar_title">Регистрация</string>
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_name_hint">Имя</string>
+    <string name="registration_lastname_hint">Фамилия (необязательно)</string>
+    <string name="registration_lastname_label">Фамилия</string>
+    <string name="registration_email_hint">Email</string>
+    <string name="registration_password_hint">Пароль</string>
+    <string name="registration_password_2_hint">Повторите пароль</string>
+    <string name="registration_phone_hint">Номер телефона</string>
+    <string name="registration_whatsapp_description">Добавьте номер WhatsApp для связи</string>
+    <string name="registration_phone_registered_text">Этот номер уже зарегистрирован!</string>
+    <string name="registration_phone_registered_text_2">Попробуйте</string>
+    <string name="registration_phone_registered_error">Номер уже зарегистрирован!</string>
+    <string name="registration_finish_dialog_title">Подтвердите номер телефона</string>
+    <string name="registration_finish_dialog_description">для завершения регистрации</string>
+    <string name="registration_finish_dialog_sms_send_description">Вам отправлен SMS с кодом подтверждения\nна номер %s</string>
+    <string name="registration_finish_dialog_no_sms_description">Не приходит SMS? Вы можете запросить\nкод повторно через %d секунд.</string>
+    <string name="registration_finish_dialog_no_sms">Не пришло SMS?</string>
+    <string name="registration_finish_dialog_sms_new">Отправить повторно</string>
+    <string name="registration_finish_dialog_sms_code_hint">Введите код из SMS</string>
+    <string name="registration_register_button_text">Регистрация</string>
+    <string name="registration_login_button_text">войти</string>
+    <string name="registration_cancel_button_text">Отмена</string>
+    <string name="registration_confirm_button_text">Подтвердить</string>
+
+    <string name="menu_phone_tj" translatable="false">+992</string>
+    <string name="menu_phone_uz" translatable="false">+998</string>
+    <string name="menu_phone_kg" translatable="false">+996</string>
+
+    <!--    Вход -->
+    <string name="login_title">Вход в аккаунт</string>
+    <string name="login_phone_not_registered_text">Аккаунт с таким номером не найден</string>
+    <string name="login_register_button_text">зарегистрироваться</string>
+    <string name="login_sign_in_button_text">Войти</string>
+    <string name="login_finish_dialog_sms_send_description">Вам отправлен SMS с кодом \nна номер %s</string>
+    <string name="login_finish_dialog_title">Введите код из SMS</string>
+    <string name="profile_edit_whatsapp_description">Номер WhatsApp</string>
+    <string name="profile_edit_save_button_text">Сохранить</string>
+    <string name="profile_edit_delete_account_button_text">Удалить аккаунт</string>
+    <string name="profile_edit_lastname_hint">Фамилия</string>
+    <string name="profile_edit_wa_number_hint">Введите номер с кодом страны</string>
+
+    <!--    Мои машины -->
+    <string name="my_cars_toolbar_title">Мои машины</string>
+    <string name="my_cars_add_car_text">добавить машину</string>
+    <string name="my_cars_add_car_button_text">Добавить машину</string>
+    <string name="my_cars_no_cars_text">У вас пока нет\nдобавленных машин</string>
+
+    <!--    Добавить машину -->
+    <string name="add_car_toolbar_title">Добавить машину</string>
+    <string name="new_car_add_button_text">Сохранить</string>
+    <string name="new_car_add_car_dialog_title">Добавить машину</string>
+    <string name="new_car_add_photo_text">Добавить фото</string>
+    <string name="new_car_car_brand_hint">Выберите марку</string>
+    <string name="new_car_car_model_hint">Выберите модель</string>
+    <string name="new_car_car_year_hint">Год</string>
+    <string name="new_car_car_color_hint">Цвет</string>
+    <string name="new_car_car_seats_hint">Мест для пассажиров</string>
+
+    <!--    Мои поездки -->
+    <string name="my_trips_toolbar_title">Мои поездки</string>
+    <string name="my_trips_no_trips_text">У вас пока нет\nпоездок</string>
+
+    <!--    Настройки профиля -->
+    <string name="profile_edit_toolbar_title">Настройки профиля</string>
+
+    <!--    Настройки -->
+    <string name="settings_toolbar_title">Настройки</string>
+    <string name="settings_language_option_title">Язык</string>
+    <string name="settings_theme_option_title">Темный режим</string>
+
+    <!--    Помощь -->
+    <string name="help_toolbar_title">Помощь</string>
+    <string name="help_write_us_title">Напишите нам</string>
+    <string name="help_write_us_description">если у вас появились вопросы</string>
+    <string name="help_hint_name">Ваше имя</string>
+    <string name="help_hint_email">Ваш Email</string>
+    <string name="help_hint_message">Напишите ваш вопрос</string>
+    <string name="help_add_file_text">Прикрепить файл</string>
+    <string name="help_send_message_button_text">Отправить</string>
+
+    <!--    Политика конфиденциальности -->
+    <string name="privacy_policy_toolbar_title">Политика конфиденциальности</string>
+    <string name="privacy_policy_screen_title">Политика\nконфиденциальности</string>
+
+    <!--    Пользовательское соглашение -->
+    <string name="user_agreement_toolbar_title">Пользовательское соглашение</string>
+    <string name="user_agreement_screen_title">Пользовательское\nсоглашение</string>
+
 </resources>

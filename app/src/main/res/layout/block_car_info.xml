@@ -46,7 +46,7 @@
                 android:layout_gravity="center"
                 android:textAppearance="@style/GeologicaMed12"
                 android:textColor="@color/white"
-                tools:text="Mercedes Benz C200" />
+                tools:text="Mercedes Benz, C200, 2007г" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </com.google.android.material.card.MaterialCardView>
 

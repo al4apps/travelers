@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_left"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTextStyle" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:textAppearance="@style/ScreenTitleStyle"
+            android:text="@string/registration_title"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameInputLayout"
+            style="@style/TextInputLayoutStyle"
+            app:startIconDrawable="@drawable/profile"
+            android:hint="@string/registration_name_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEditText"
+                style="@style/SimpleEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/basic_edit_text_height"
+                android:inputType="textCapSentences"
+                android:hint="@string/registration_name_hint"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_small"/>
+
+        <include
+            android:id="@+id/phoneBlock"
+            layout="@layout/block_phone_text_field"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_medium" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_small"
+            android:text="@string/registration_whatsapp_description"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/GreyDescriptionTextStyle" />
+
+        <include
+            android:id="@+id/whatsappTextFieldBlock"
+            layout="@layout/block_phone_text_field_wa" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_large_48"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/errorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="@string/registration_phone_registered_text"
+            android:textAppearance="@style/GeologicaReg14"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/tryLoginLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/registration_phone_registered_text_2"
+                android:textAppearance="@style/GeologicaReg14"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:paddingHorizontal="@dimen/margin_extra_small"
+                android:text="@string/registration_login_button_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/ClickableTextStyle"
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButton"
+        style="@style/FilledButtonStyle"
+        android:layout_width="@dimen/button_max_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:enabled="false"
+        android:text="@string/registration_register_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:enabled="true"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
