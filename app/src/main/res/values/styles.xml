@@ -16,8 +16,12 @@
     <style name="TextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="hintEnabled">false</item>
         <item name="android:maxLines">1</item>
-        <item name="android:textAppearance">@style/GeologicaMed16</item>
+        <item name="android:textAppearance">@style/GeologicaReg16</item>
         <item name="hintTextAppearance">@style/TextFieldHintStyle</item>
+    </style>
+
+    <style name="CalendarInputLayoutStyle" parent="TextInputLayoutStyle">
+<!--        <item name="startIconTint">@color/start_icon_tint</item>-->
     </style>
 
     <style name="NoStrokeTextInputStyle" parent="Widget.Material3.TextInputLayout.FilledBox.Dense">

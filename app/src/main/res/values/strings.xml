@@ -11,8 +11,8 @@
     <string name="search_field_address_destination_hint">Куда</string>
     <string name="search_field_calendar_hint">Когда</string>
     <string name="search_field_count_hint">Количество мест</string>
-    <string name="search_screen_title">Поиск поездок</string>
-    <string name="search_search_button_text">Искать</string>
+    <string name="search_screen_title">Найти поездку</string>
+    <string name="search_search_button_text">Поиск</string>
 
     <!-- Trip   -->
     <string name="trip_screen_time_out_text">Выезд:</string>

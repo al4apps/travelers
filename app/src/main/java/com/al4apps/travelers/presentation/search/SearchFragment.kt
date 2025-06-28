@@ -6,9 +6,8 @@ import androidx.navigation.fragment.findNavController
 import com.al4apps.travelers.R
 import com.al4apps.travelers.databinding.FragmentSearchBinding
 import com.al4apps.travelers.presentation.utils.AbstractFragment
-import com.google.android.material.timepicker.MaterialTimePicker
 
-class SearchFragment: AbstractFragment<FragmentSearchBinding>(FragmentSearchBinding::inflate) {
+class SearchFragment : AbstractFragment<FragmentSearchBinding>(FragmentSearchBinding::inflate) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -31,7 +31,7 @@
 
             <include
                 android:id="@+id/formBlock"
-                layout="@layout/block_trip_form"/>
+                layout="@layout/block_search_trip_form"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/searchButton"
