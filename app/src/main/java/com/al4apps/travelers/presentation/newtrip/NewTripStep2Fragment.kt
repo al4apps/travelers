@@ -5,7 +5,7 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.al4apps.travelers.R
 import com.al4apps.travelers.databinding.FragmentNewTripStep2Binding
-import com.al4apps.travelers.presentation.dialogs.utils.trip1
+import com.al4apps.travelers.presentation.utils.trip1
 import com.al4apps.travelers.presentation.utils.AbstractFragment
 
 class NewTripStep2Fragment : AbstractFragment<FragmentNewTripStep2Binding>(
@@ -20,7 +20,7 @@ class NewTripStep2Fragment : AbstractFragment<FragmentNewTripStep2Binding>(
         binding.nextButton.setOnClickListener {
             findNavController().navigate(R.id.action_newTripStep2Fragment_to_newTripStep3Fragment)
         }
-        val addressMain = trip1.pointTo.village ?: trip1.pointTo.city ?: ""
+        val addressMain = trip1.pointTo.village ?: trip1.pointTo.city?.name ?: ""
         val addressSecondary = buildString {
             append(trip1.pointTo.country)
             append(", ")
@@ -28,7 +28,6 @@ class NewTripStep2Fragment : AbstractFragment<FragmentNewTripStep2Binding>(
             append(", ")
             append(trip1.pointTo.city ?: "")
             append(", ")
-            append(trip1.pointTo.street ?: "")
         }
         with(binding.addressBlock) {
             addressText.text = addressMain

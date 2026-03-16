@@ -1,48 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.card.MaterialCardView
-        style="@style/SearchCardViewStyle"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/margin_small"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <com.google.android.material.card.MaterialCardView
+            style="@style/SearchCardViewStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginHorizontal="@dimen/margin_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.appcompat.widget.AppCompatTextView
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_large"
-                android:text="@string/search_screen_title"
-                android:textAlignment="center"
-                android:textAppearance="@style/ScreenTitleStyle" />
+                android:orientation="vertical">
 
-            <include
-                android:id="@+id/formBlock"
-                layout="@layout/block_search_trip_form"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:text="@string/search_screen_title"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/ScreenTitleStyle" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/searchButton"
-                style="@style/FilledButtonStyle"
-                android:layout_width="@dimen/button_width_std"
-                android:layout_height="@dimen/button_height"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/margin_large"
-                android:text="@string/search_search_button_text"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                <include
+                    android:id="@+id/formBlock"
+                    layout="@layout/block_search_trip_form" />
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </com.google.android.material.card.MaterialCardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/searchButton"
+                    style="@style/FilledButtonStyle"
+                    android:layout_width="@dimen/button_width_std"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/search_search_button_text"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/addressBottomSheet"-->
+<!--        style="@style/Widget.Material3.BottomSheet"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:paddingHorizontal="@dimen/padding_medium"-->
+<!--        android:paddingTop="@dimen/padding_medium"-->
+<!--        android:backgroundTint="@color/md_theme_background"-->
+<!--        app:shapeAppearance="?attr/shapeAppearanceCornerExtraSmall"-->
+<!--        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/addressInputLayout"-->
+<!--            style="@style/TextInputLayoutStyle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconDrawable="@drawable/close"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:startIconDrawable="@drawable/arrow_left">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/addressEditText"-->
+<!--                style="@style/SimpleEditTextStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/basic_edit_text_height"-->
+<!--                android:hint="@string/search_dialog_address_hint"-->
+<!--                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

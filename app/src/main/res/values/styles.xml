@@ -204,7 +204,7 @@
         <item name="android:textColorHint">@color/grey_focus</item>
     </style>
 
-    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox"></style>
+    <style name="UnderlineTextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.FilledBox" />
 
     <!--  Стиль для полноэкранных диалогов-->
     <style name="FullScreenDialog">
@@ -214,6 +214,18 @@
         <item name="android:windowMinWidthMajor">100%</item>
         <item name="android:windowMinWidthMinor">100%</item>
         <item name="android:windowBackground">@color/grey_dialog_background</item>
+    </style>
+
+    <style name="FullScreenBottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.None" parent="">
+        <item name="cornerFamily">cut</item>
     </style>
 
     <style name="SimpleEditTextStyle">

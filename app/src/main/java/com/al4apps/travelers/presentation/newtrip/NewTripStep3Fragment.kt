@@ -5,7 +5,7 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.al4apps.travelers.R
 import com.al4apps.travelers.databinding.FragmentNewTripStep3Binding
-import com.al4apps.travelers.presentation.dialogs.utils.trip1
+import com.al4apps.travelers.presentation.utils.trip1
 import com.al4apps.travelers.presentation.utils.AbstractFragment
 
 class NewTripStep3Fragment : AbstractFragment<FragmentNewTripStep3Binding>(
